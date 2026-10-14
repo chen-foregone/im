@@ -1,0 +1,128 @@
+<template>
+	<view class="im-nav-bar">
+		<!-- #ifdef APP -->
+		<view style="height: var(--status-bar-height)"></view>
+		<!-- #endif -->
+		<view class="im-nav-bar-content">
+			<!-- #ifndef MP-WEIXIN -->
+			<view class="back" @click="handleBackClick" v-if="back">
+				<uni-icons type="back" :size="iconFontSize"></uni-icons>
+			</view>
+			<!-- #endif -->
+			<view class="title" v-if="title">
+				<slot></slot>
+			</view>
+			<view class="btn">
+				<uni-icons class="btn-item" v-if="search" type="search" :size="iconFontSize"
+					@click="$emit('search')"></uni-icons>
+				<uni-icons class="btn-item" v-if="add" type="plusempty" :size="iconFontSize"
+					@click="$emit('add')"></uni-icons>
+				<uni-icons class="btn-item" v-if="more" type="more-filled" :size="iconFontSize"
+					@click="$emit('more')"></uni-icons>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+export default {
+	name: "nav-bar",
+	props: {
+		back: {
+			type: Boolean,
+			default: false
+		},
+		title: {
+			type: Boolean,
+			default: true
+		},
+		search: {
+			type: Boolean,
+			default: false
+		},
+		add: {
+			type: Boolean,
+			default: false
+		},
+		more: {
+			type: Boolean,
+			default: false
+		},
+		iconFontSize: {
+			type: Number,
+			default: 24
+		}
+	},
+	data() {
+		return {}
+	},
+	computed: {
+		height() {
+
+		}
+	},
+	methods: {
+		handleBackClick() {
+			uni.navigateBack({
+				delta: 1
+			})
+		}
+	}
+}
+</script>
+
+<style scoped lang="scss">
+.im-nav-bar {
+	background: $im-bg-linear;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: $im-text-color;
+	font-size: $im-font-size-large;
+	z-index: 99;
+
+	.im-nav-bar-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		height: $im-nav-bar-height;
+
+		.title {
+			max-width: 500rpx;
+			padding: 0 12rpx;
+			box-sizing: border-box;
+			text-align: center;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.back {
+			position: absolute;
+			left: 0;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 12px;
+			font-size: 22px;
+			box-sizing: border-box;
+		}
+
+		.btn {
+			position: absolute;
+			right: 0;
+			height: 100%;
+			display: flex;
+			padding: 12px;
+			align-items: center;
+			box-sizing: border-box;
+
+			.btn-item {
+				margin-left: 8px;
+			}
+		}
+	}
+
+}
+</style>

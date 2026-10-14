@@ -1,0 +1,83 @@
+package com.bx.implatform.controller;
+
+import com.bx.implatform.dto.ChatDeleteDTO;
+import com.bx.implatform.dto.GroupMessageDTO;
+import com.bx.implatform.dto.GroupMessageHistoryDTO;
+import com.bx.implatform.dto.MessageDeleteDTO;
+import com.bx.implatform.result.Result;
+import com.bx.implatform.result.ResultUtils;
+import com.bx.implatform.service.GroupMessageService;
+import com.bx.implatform.vo.GroupMessageVO;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@Tag(name = "群聊消息")
+@RestController
+@RequestMapping("/message/group")
+@RequiredArgsConstructor
+public class GroupMessageController {
+
+    private final GroupMessageService groupMessageService;
+
+    @PostMapping("/send")
+    @Operation(summary = "发送群聊消息", description = "发送群聊消息")
+    public Result<GroupMessageVO> sendMessage(@Valid @RequestBody GroupMessageDTO vo) {
+        return ResultUtils.success(groupMessageService.sendMessage(vo));
+    }
+
+    @DeleteMapping("/recall/{id}")
+    @Operation(summary = "撤回消息", description = "撤回群聊消息")
+    public Result<GroupMessageVO> recallMessage(@NotNull(message = "消息id不能为空") @PathVariable Long id) {
+        return ResultUtils.success(groupMessageService.recallMessage(id));
+    }
+
+
+    @GetMapping(value = "/loadOfflineMessage")
+    @Operation(summary = "拉取离线消息", description = "拉取离线消息")
+    public Result<List<GroupMessageVO>> loadOfflineMessage(@RequestParam Long minId) {
+        return ResultUtils.success(groupMessageService.loadOffineMessage(minId));
+    }
+
+
+    @PutMapping("/readed")
+    @Operation(summary = "消息已读", description = "将群聊中的消息状态置为已读")
+    public Result readedMessage(@RequestParam Long groupId,@RequestParam(required = false) Long messageId) {
+        groupMessageService.readedMessage(groupId,messageId);
+        return ResultUtils.success();
+    }
+
+    @GetMapping("/findReadedUsers")
+    @Operation(summary = "获取已读用户id", description = "获取消息已读用户列表")
+    public Result<List<Long>> findReadedUsers(@RequestParam Long groupId,
+        @RequestParam Long messageId) {
+        return ResultUtils.success(groupMessageService.findReadedUsers(groupId, messageId));
+    }
+
+    @DeleteMapping("/deleteMessage")
+    @Operation(summary = "删除消息", description = "根据消息id列表删除消息")
+    public Result deleteMessage(@Valid @RequestBody MessageDeleteDTO dto) {
+        groupMessageService.deleteMessage(dto);
+        return ResultUtils.success();
+    }
+
+    @DeleteMapping("/deleteChat")
+    @Operation(summary = "删除会话", description = "删除会话以及会话中的所有消息")
+    public Result deleteChat(@Valid @RequestBody ChatDeleteDTO dto) {
+        groupMessageService.deleteChat(dto);
+        return ResultUtils.success();
+    }
+
+
+    @PostMapping("/history")
+    @Operation(summary = "查询历史消息", description = "查询历史消息")
+    public Result loadHistoryMessage(@Valid @RequestBody GroupMessageHistoryDTO dto) {
+        return ResultUtils.success(groupMessageService.loadHistoryMessage(dto));
+    }
+}
+

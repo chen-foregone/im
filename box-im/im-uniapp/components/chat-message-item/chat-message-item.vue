@@ -1,0 +1,564 @@
+<template>
+	<view class="chat-message-item" :class="active?'active':''">
+		<view class="message-tip" v-if="message.type == $enums.MESSAGE_TYPE.TIP_TEXT">
+			<view class="message-tip-inner">{{ message.content }}</view>
+		</view>
+		<view class="message-tip" v-else-if="message.type == $enums.MESSAGE_TYPE.TIP_TIME">
+			<view class="message-tip-inner">{{ $date.toTimeText(message.sendTime) }}</view>
+		</view>
+		<view class="message-normal" v-else-if="isNormal" :class="{ 'message-mine': message.selfSend }">
+			<head-image class="avatar" @longpress.prevent="$emit('longPressHead')" :id="message.sendId" :url="headImage"
+				:name="showName" size="small" :is-show-user-info="true"></head-image>
+			<view class="content">
+				<view v-if="message.groupId && !message.selfSend" class="top">
+					<text class="name">{{ showName }}</text>
+				</view>
+				<view class="bottom">
+					<view class="message-body" @longpress.prevent.stop="onLongPressMessage">
+						<view v-if="message.type == $enums.MESSAGE_TYPE.TEXT">
+							<!-- up-parse支持点击a标签,但是不支持显示emo表情，也不支持换行 -->
+							<up-parse v-if="$url.containUrl(message.content)&&!$emo.containEmoji(message.content)"
+								class="message-text" :showImgMenu="false" :content="nodesText"></up-parse>
+							<!-- rich-text支持显示emo表情以及消息换行，但是不支持点击a标签 -->
+							<rich-text v-else class="message-text" :nodes="nodesText"></rich-text>
+						</view>
+						<view class="message-image" v-else-if="message.type == $enums.MESSAGE_TYPE.IMAGE">
+							<view class="image-box">
+								<image class="send-image" :style="imageStyle" mode="aspectFill" :src="contentData.thumbUrl"
+									lazy-load="true" @click.stop="onShowFullImage()">
+								</image>
+								<custom-loading v-if="sending"></custom-loading>
+							</view>
+						</view>
+						<view class="message-file" v-else-if="message.type == $enums.MESSAGE_TYPE.FILE">
+							<view class="file-box">
+								<view class="file-info">
+									<uni-link class="file-name" :text="contentData.name" showUnderLine="true" color="#007BFF"
+										:href="contentData.url"></uni-link>
+									<view class="file-size">{{ fileSize }}</view>
+								</view>
+								<view class="file-icon iconfont icon-file"></view>
+								<custom-loading v-if="sending"></custom-loading>
+							</view>
+						</view>
+						<view v-else-if="message.type == $enums.MESSAGE_TYPE.AUDIO">
+							<view class="message-audio message-text" @click="onPlayAudio()">
+								<text class="iconfont icon-voice-play"></text>
+								<text class="audio-text">{{ contentData.duration + '"' }}</text>
+								<text v-if="audioPlayState == 'PAUSE'" class="iconfont icon-play"></text>
+								<text v-if="audioPlayState == 'PLAYING'" class="iconfont icon-pause"></text>
+							</view>
+						</view>
+						<view v-if="isAction" class="chat-realtime message-text" @click="$emit('call')">
+							<text v-if="message.type == $enums.MESSAGE_TYPE.ACT_RT_VOICE" class="iconfont icon-chat-voice"></text>
+							<text v-if="message.type == $enums.MESSAGE_TYPE.ACT_RT_VIDEO" class="iconfont icon-chat-video"></text>
+							<text>{{ message.content }}</text>
+						</view>
+						<view v-if="sending&&(isTextMessage||isAudioMessage)" class="sending">
+							<custom-loading :size="40" icon-color="#656adf" :mask="false"></custom-loading>
+						</view>
+						<view v-else-if="sendFail" @click="onSendFail" class="send-fail iconfont icon-warning-circle-fill"></view>
+					</view>
+					<view class="message-status" v-if="!isAction && message.selfSend && !message.groupId">
+						<text class="chat-readed" v-if="isReaded">已读</text>
+						<text class="chat-unread" v-else>未读</text>
+					</view>
+					<view class="chat-receipt" v-if="message.receipt&&message.selfSend" @click="$emit('receipt')">
+						<text v-if="message.receiptOk" class="tool-icon iconfont icon-ok"></text>
+						<text v-else>{{ message.readedCount }}人已读</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+export default {
+	name: "chat-message-item",
+	props: {
+		headImage: {
+			type: String,
+			default: ''
+		},
+		showName: {
+			type: String,
+			default: ''
+		},
+		conversation: {
+			type: Object,
+			required: true
+		},
+		message: {
+			type: Object,
+			required: true
+		},
+		active: {
+			type: Boolean,
+			default: false
+		}
+	},
+	data() {
+		return {
+			audioPlayState: 'STOP',
+			innerAudioContext: null,
+			menu: {
+				show: false,
+				style: ""
+			}
+		}
+	},
+	methods: {
+		onSendFail() {
+			this.$emit("resend", this.message);
+		},
+		onPlayAudio() {
+			// 初始化音频播放器
+			if (!this.innerAudioContext) {
+				this.innerAudioContext = uni.createInnerAudioContext();
+				let url = this.contentData.url;
+				this.innerAudioContext.src = url;
+				this.innerAudioContext.onEnded((e) => {
+					console.log('停止')
+					this.audioPlayState = "STOP"
+					this.emit();
+				})
+				this.innerAudioContext.onError((e) => {
+					this.audioPlayState = "STOP"
+					console.log("播放音频出错");
+					console.log(e)
+					this.emit();
+				});
+			}
+			if (this.audioPlayState == 'STOP') {
+				this.innerAudioContext.play();
+				this.audioPlayState = "PLAYING";
+			} else if (this.audioPlayState == 'PLAYING') {
+				this.innerAudioContext.pause();
+				this.audioPlayState = "PAUSE"
+			} else if (this.audioPlayState == 'PAUSE') {
+				this.innerAudioContext.play();
+				this.audioPlayState = "PLAYING"
+			}
+			this.emit();
+		},
+		onSelectMenu(item) {
+			this.$emit(item.key.toLowerCase(), this.message);
+			this.menu.show = false;
+		},
+		onShowFullImage() {
+			let imageUrl = this.contentData.originUrl;
+			uni.previewImage({
+				urls: [imageUrl]
+			})
+		},
+		onLongPressMessage(e) {
+			this.$emit("long-press-menu", e, this.message, this.menuItems)
+		},
+		emit() {
+			this.$emit("audioStateChange", this.audioPlayState, this.message);
+		},
+		stopPlayAudio() {
+			if (this.innerAudioContext) {
+				this.innerAudioContext.stop();
+				this.innerAudioContext = null;
+				this.audioPlayState = "STOP"
+			}
+		}
+	},
+	computed: {
+		sending() {
+			return this.message.status == this.$enums.MESSAGE_STATUS.SENDING;
+		},
+		sendFail() {
+			return this.message.status == this.$enums.MESSAGE_STATUS.FAILED;
+		},
+		contentData() {
+			return JSON.parse(this.message.content)
+		},
+		fileSize() {
+			let size = this.contentData.size;
+			if (size > 1024 * 1024) {
+				return Math.round(size / 1024 / 1024) + "M";
+			}
+			if (size > 1024) {
+				return Math.round(size / 1024) + "KB";
+			}
+			return size + "B";
+		},
+		menuItems() {
+			let items = [];
+			if (this.message.type == this.$enums.MESSAGE_TYPE.TEXT) {
+				items.push({
+					key: 'COPY',
+					name: '复制',
+				});
+			}
+			if (this.message.selfSend && this.message.id > 0) {
+				items.push({
+					key: 'RECALL',
+					name: '撤回',
+				});
+			}
+			items.push({
+				key: 'DELETE',
+				name: '删除',
+				danger: true
+			});
+			if (this.message.type == this.$enums.MESSAGE_TYPE.FILE) {
+				items.push({
+					key: 'DOWNLOAD',
+					name: '下载并打开',
+				});
+			}
+			return items;
+		},
+		isTextMessage() {
+			return this.message.type == this.$enums.MESSAGE_TYPE.TEXT
+		},
+		isAudioMessage() {
+			return this.message.type == this.$enums.MESSAGE_TYPE.AUDIO
+		},
+		isAction() {
+			return this.$msgType.isAction(this.message.type);
+		},
+		isNormal() {
+			const type = this.message.type;
+			return this.$msgType.isNormal(type) || this.$msgType.isAction(type)
+		},
+		nodesText() {
+			let color = this.message.selfSend ? 'white' : '';
+			let text = this.$str.html2Escape(this.message.content)
+			text = this.$url.replaceURLWithHTMLLinks(text, color)
+			return this.$emo.transform(text, 'emoji-normal')
+		},
+		imageStyle() {
+			let maxSize = uni.getSystemInfoSync().windowWidth * 0.6;
+			let minSize = uni.getSystemInfoSync().windowWidth * 0.2;
+			let width = this.contentData.width;
+			let height = this.contentData.height;
+			if (width && height) {
+				let ratio = Math.min(width, height) / Math.max(width, height);
+				let w = Math.max(width > height ? maxSize : ratio * maxSize, minSize);
+				let h = Math.max(width > height ? ratio * maxSize : maxSize, minSize);
+				return `width: ${w}px;height:${h}px;`
+			} else {
+				// 兼容历史版本，历史数据没有记录宽高
+				return `max-width: ${maxSize}px;min-width:100px;max-height: ${maxSize}px;min-height:100px;`
+			}
+		},
+		isReaded() {
+			return this.message.status == this.$enums.MESSAGE_STATUS.READED || this.conversation.maxReadedId >= this
+				.message.id
+		},
+	}
+}
+
+</script>
+
+<style scoped lang="scss">
+.chat-message-item {
+	padding: 15rpx 20rpx;
+	border-radius: 20rpx;
+
+	&.active {
+		background: $im-bg-active-dark;
+	}
+
+	.message-tip {
+		display: flex;
+		justify-content: center;
+		margin: 8rpx 0;
+
+		.message-tip-inner {
+			max-width: 80%;
+			padding: 6rpx 20rpx;
+			line-height: 36rpx;
+			border-radius: 10rpx;
+			background: rgba(255, 255, 255, 0.3);
+			text-align: center;
+			word-break: break-word;
+			color: $im-text-color-lighter;
+			font-size: $im-font-size-smaller;
+		}
+	}
+
+	.message-normal {
+		position: relative;
+		padding-left: 105rpx;
+		min-height: 80rpx;
+
+		.avatar {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.content {
+			text-align: left;
+
+			.top {
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+
+				.name {
+					color: $im-text-color-light;
+					font-size: $im-font-size-smaller;
+					line-height: $im-font-size-smaller;
+					height: $im-font-size-smaller;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+
+			.bottom {
+				display: inline-block;
+				padding-right: 80rpx;
+				margin-top: 10rpx;
+
+				.message-body {
+					position: relative;
+					display: inline-flex;
+					align-items: center;
+
+					.sending {
+						position: relative;
+						margin: 0 20rpx;
+
+						.icon-loading {
+							color: $im-color-primary;
+						}
+					}
+
+					.send-fail {
+						color: #e60c0c;
+						font-size: 50rpx;
+						margin: 0 5rpx;
+					}
+
+					.message-text {
+						position: relative;
+						line-height: 1.6;
+						padding: 16rpx 20rpx 16rpx 16rpx;
+						background: white;
+						color: $im-text-color;
+						font-size: $im-font-size;
+						text-align: left;
+						display: inline-flex;
+						flex-wrap: wrap;
+						align-items: baseline;
+						word-break: break-word;
+						white-space: pre-line;
+						overflow: visible;
+						border-radius: 20rpx;
+						margin-left: 8rpx;
+
+						&:after {
+							content: "";
+							position: absolute;
+							left: -10rpx;
+							top: 20rpx;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-color: transparent white transparent transparent;
+							border-width: 12rpx 12rpx 12rpx 0;
+						}
+					}
+
+					.message-image {
+						display: flex;
+						flex-wrap: nowrap;
+						flex-direction: row;
+						align-items: center;
+
+						.image-box {
+							position: relative;
+							border-radius: 16rpx;
+							overflow: hidden;
+							background: $im-bg;
+							box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
+
+							.send-image {
+								display: block;
+								cursor: pointer;
+								vertical-align: top;
+							}
+						}
+					}
+
+					.message-file {
+						display: flex;
+						flex-wrap: nowrap;
+						flex-direction: row;
+						align-items: center;
+						cursor: pointer;
+						background: white;
+						border-radius: 20rpx;
+						min-height: 120rpx;
+						padding: 30rpx;
+						box-shadow: $im-box-shadow;
+						overflow: hidden;
+
+						.file-box {
+							position: relative;
+							display: flex;
+							flex-wrap: nowrap;
+							align-items: center;
+
+							.file-info {
+								flex: 1;
+								height: 100%;
+								text-align: left;
+								font-size: 28rpx;
+								width: 300rpx;
+
+								.file-name {
+									font-weight: 600;
+									margin-bottom: 20rpx;
+									word-break: break-all;
+									color: #007BFF;
+									font-size: $im-font-size-small;
+								}
+							}
+
+							.file-icon {
+								font-size: 80rpx;
+								color: #d42e07;
+							}
+						}
+					}
+
+					.message-audio {
+						display: flex;
+						align-items: center;
+
+						.audio-text {
+							padding-right: 15rpx;
+						}
+
+						.icon-voice-play {
+							font-size: 34rpx;
+							padding-right: 16rpx;
+						}
+					}
+				}
+
+				.chat-realtime {
+					display: flex;
+					flex-wrap: nowrap;
+					align-items: center;
+					line-height: 1.2;
+					gap: 16rpx;
+
+					&.message-text {
+						align-items: center;
+					}
+
+					.iconfont {
+						font-size: 40rpx;
+						line-height: 1;
+						position: relative;
+						top: 2rpx;
+					}
+				}
+
+				.message-status {
+					line-height: $im-font-size-smaller-extra;
+					font-size: $im-font-size-smaller-extra;
+					margin-top: 5rpx;
+
+					.chat-readed {
+						padding-top: 20rpx;
+						color: $im-text-color-lighter;
+					}
+
+					.chat-unread {
+						color: $im-color-danger;
+					}
+				}
+
+				.chat-receipt {
+					font-size: $im-font-size-smaller;
+					color: $im-text-color-lighter;
+					font-weight: 600;
+					margin-top: 5rpx;
+
+					.icon-ok {
+						font-size: 20px;
+						color: $im-color-success;
+					}
+				}
+			}
+		}
+
+		&.message-mine {
+			text-align: right;
+			padding-left: 0;
+			padding-right: 105rpx;
+
+			.avatar {
+				left: auto;
+				right: 0;
+			}
+
+			.content {
+				text-align: right;
+
+				.bottom {
+					padding-left: 80rpx;
+					padding-right: 0;
+
+					.message-body {
+						flex-direction: row-reverse;
+					}
+
+					.message-text {
+						margin-left: 10rpx;
+						margin-right: 8rpx;
+						padding: 16rpx 16rpx 16rpx 20rpx;
+						background: $im-color-primary-light-2;
+						color: white;
+
+						&:after {
+							left: auto;
+							right: -10rpx;
+							top: 20rpx;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-color: transparent transparent transparent $im-color-primary-light-2;
+							border-width: 12rpx 0 12rpx 12rpx;
+						}
+					}
+
+					.message-audio {
+						flex-direction: row-reverse;
+
+						.audio-text {
+							padding-right: 0;
+							padding-left: 8px;
+						}
+
+						.icon-voice-play {
+							transform: rotateY(180deg);
+						}
+					}
+
+					.chat-realtime {
+						flex-direction: row-reverse;
+						align-items: center;
+
+						.iconfont {
+							transform: rotateY(180deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+</style>

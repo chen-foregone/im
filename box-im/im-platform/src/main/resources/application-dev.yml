@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/im_platform_test?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  data:
+    redis:
+      host: localhost
+      port: 6380   # 压测专用 Redis（6379 被本机另一套 Redis 占用）
+
+minio:
+  endpoint: http://127.0.0.1:9000 #内网地址
+  domain: http://192.168.2.67:9000  #外网访问地址
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: box-im
+  imagePath: image
+  filePath: file
+  videoPath: video
+  expireIn: 180 # 文件过期时间,单位:天
+
+webrtc:
+  max-channel: 9 # 多人通话最大通道数量，最大不能超过16,建议值:4,9,16
+  iceServers:
+    - urls: stun:stun.l.google.com:19302
+
+

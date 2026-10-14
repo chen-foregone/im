@@ -1,0 +1,125 @@
+package com.bx.imclient;
+
+import com.bx.imclient.sender.IMSender;
+import com.bx.imcommon.enums.IMTerminalType;
+import com.bx.imcommon.model.IMBatchPrivateMessage;
+import com.bx.imcommon.model.IMGroupMessage;
+import com.bx.imcommon.model.IMPrivateMessage;
+import com.bx.imcommon.model.IMGroupSignal;
+import com.bx.imcommon.model.IMSystemMessage;
+import com.bx.imcommon.model.IMUserInfo;
+import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Configuration;
+
+import java.util.List;
+import java.util.Map;
+
+@Configuration
+@AllArgsConstructor
+public class IMClient {
+
+    private final IMSender imSender;
+
+    /**
+     * 判断用户是否在线
+     *
+     * @param userId 用户id
+     */
+    public Boolean isOnline(Long userId){
+        return imSender.isOnline(userId);
+    }
+
+    /**
+     * 判断用户是否在线
+     *
+     * @param userId 用户id
+     * @param terminal 终端可惜
+     */
+    public Boolean isOnline(Long userId,IMTerminalType terminal){
+        return imSender.isOnline(userId,terminal);
+    }
+
+
+    /**
+     * 判断多个用户是否在线
+     *
+     * @param userIds 用户id列表
+     * @return 在线的用户列表
+     */
+    public List<Long> getOnlineUser(List<Long> userIds){
+        return imSender.getOnlineUser(userIds);
+    }
+
+
+    /**
+     * 判断多个用户是否在线
+     *
+     * @param userIds 用户id列表
+     * @return 在线的用户终端
+     */
+    public Map<Long,List<IMTerminalType>> getOnlineTerminal(List<Long> userIds){
+        return imSender.getOnlineTerminal(userIds);
+    }
+
+    /**
+     * 强制用户所有在线终端下线
+     *
+     * @param userId 用户id
+     * @param type   下线类型，见 IMForceLogoutType
+     * @param reason 原因说明
+     */
+    public void forceLogout(Long userId, Integer type, String reason){
+        imSender.forceLogout(userId, type, reason);
+    }
+
+    /**
+     * 发送系统消息（发送结果通过MessageListener接收）
+     *
+     * @param message 私有消息
+     */
+    public<T> void sendSystemMessage(IMSystemMessage<T> message){
+        imSender.sendSystemMessage(message);
+    }
+
+
+    /**
+     * 发送私聊消息（发送结果通过MessageListener接收）
+     *
+     * @param message 私有消息
+     */
+    public<T> void sendPrivateMessage(IMPrivateMessage<T> message){
+        imSender.sendPrivateMessage(message);
+    }
+
+
+    /**
+     * 批量发送私聊消息（发送结果通过MessageListener接收）
+     *
+     * @param message 私有消息
+     */
+    public<T> void sendBatchPrivateMessage(IMBatchPrivateMessage<T> message){
+        imSender.sendBatchPrivateMessage(message);
+    }
+
+    /**
+     * 发送群聊消息（发送结果通过MessageListener接收）
+     *
+     * @param message 群聊消息
+     */
+    public<T> void sendGroupMessage(IMGroupMessage<T> message){
+        imSender.sendGroupMessage(message);
+    }
+
+    /**
+     * 读扩散群：只推一条不含内容的信号给在线成员，客户端收到后自行拉取。
+     * 见 docs/群聊瓶颈解决方案.md 3.6。
+     */
+    public void sendGroupSignal(IMGroupSignal signal, List<Long> recvIds, List<Integer> recvTerminals,
+                                IMUserInfo sender){
+        imSender.sendGroupSignal(signal, recvIds, recvTerminals, sender);
+    }
+
+
+
+
+}

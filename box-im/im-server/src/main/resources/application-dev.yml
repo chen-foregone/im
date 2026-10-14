@@ -1,0 +1,5 @@
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6380   # 压测专用 Redis（6379 被本机另一套 Redis 占用）

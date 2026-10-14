@@ -1,0 +1,156 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [{
+			"path": "pages/chat/chat",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/login/login"
+		},
+		{
+			"path": "pages/register/register"
+		},
+		{
+			"path": "pages/friend/friend"
+		},
+		{
+			"path": "pages/group/group"
+		},
+		{
+			"path": "pages/mine/mine"
+		},
+		{
+			"path": "pages/common/user-info"
+		},
+		{
+			"path": "pages/chat/chat-box",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					// adjustPan窗体高度不变，但窗体上推、adjustResize屏幕高度=webview窗体高度+软键盘高度
+					"softinputMode": "adjustResize",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chat/chat-private-video"
+		},
+		{
+			"path": "pages/chat/chat-group-video"
+		},
+		{
+			"path": "pages/chat/chat-history",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chat/chat-history-image",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/chat/chat-history-file",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/friend/friend-add"
+		},
+		{
+			"path": "pages/group/group-info"
+		},
+		{
+			"path": "pages/group/group-edit"
+		},
+		{
+			"path": "pages/group/group-invite"
+		},
+		{
+			"path": "pages/group/group-member"
+		},
+		{
+			"path": "pages/mine/mine-edit"
+		},
+		{
+			"path": "pages/mine/mine-password"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "盒子IM",
+		"navigationBarTextStyle": "black",
+		/*  #ifndef MP-WEIXIN */
+		"navigationStyle": "custom",
+		/* #endif */
+		/*  #ifdef MP-WEIXIN */
+		"navigationStyle": "default",
+		/* #endif */
+		"navigationBarBackgroundColor": "#f7f7f7",
+		"backgroundColor": "#f7f7f7"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#587ff0",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/chat/chat",
+				"iconPath": "static/tab/chat.png",
+				"selectedIconPath": "static/tab/chat_active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/friend/friend",
+				"iconPath": "static/tab/friend.png",
+				"selectedIconPath": "static/tab/friend_active.png",
+				"text": "好友"
+			},
+			{
+				"pagePath": "pages/group/group",
+				"iconPath": "static/tab/group.png",
+				"selectedIconPath": "static/tab/group_active.png",
+				"text": "群聊"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tab/mine.png",
+				"selectedIconPath": "static/tab/mine_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

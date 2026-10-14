@@ -1,0 +1,111 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: dev # 环境 dev|test|prod
+  application:
+    name: im-platform
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  # -------------------------------------------------------------
+  # Kafka：群聊写扩散(fan-out)的持久化队列
+  #
+  # 解决什么问题(2026-10 实测)：
+  #   GroupMessageServiceImpl.sendMessage 原本在 HTTP 请求线程里同步做扇出：
+  #   万人群要构造 3N=30000 个 Redis key、发一条约 700KB 的 MGET、再展开 N 个离线对象。
+  #   实测单请求延迟 32ms，50 并发下劣化到约 1058ms。
+  #   改为投递轻量任务后，请求线程只做「落库 + 发一条 Kafka 记录」。
+  #
+  # 分区键为什么用 messageId 而不是 groupId：
+  #   用 groupId 可保同群有序，但单个热门群只会落进一个分区，消费者单线程串行
+  #   30ms/条 ≈ 31 msg/s，反而低于现在实测的 55 msg/s(靠请求线程并发拿到)。
+  #   客户端按 seqNo 排序渲染(im-web/src/stores/chat.ts:505)，seqNo 又等于主键 id，
+  #   因此推送乱序不影响最终显示，可以安全打散分区换取并发。
+  # -------------------------------------------------------------
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: 1
+      retries: 3
+      properties:
+        # 不要为了攒批而增加延迟，扇出对时效敏感
+        linger.ms: 0
+        # broker 不可用时最多阻塞 5 秒，避免请求线程被 Kafka 拖死
+        max.block.ms: 5000
+    consumer:
+      group-id: im-platform-group-fanout
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.bx.implatform.dto
+        spring.json.value.default.type: com.bx.implatform.dto.GroupFanoutTask
+    listener:
+      # 每条处理完再提交位点：扇出失败会重试，不会静默丢失
+      ack-mode: record
+      # 与 topic 分区数一致，打散后最多 6 路并发
+      concurrency: 6
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: AUTO # ID自增
+  configuration:
+    map-underscore-to-camel-case: true  #开启自动驼峰命名规则
+    # 【性能修复】原为 StdOutImpl：它绕过 logback，无视日志级别，
+    # 把每条 SQL 和执行结果逐行直接写入 stdout。
+    # 实测冷启动时 50 个发送者并发触发「群成员缓存」未命中，每个查询返回 10000 行，
+    # 共 50 万行结果同步争抢同一个日志文件写锁，导致单请求超过 30s 超时（万人群失败率 5%）。
+    # 改为 Slf4jImpl：走 SLF4J，受 logback 级别控制，默认 INFO 下不输出。
+    # 详见 docs/群聊性能优化-P1-seqNo改造报告.md
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+# 应用自定义开关
+im:
+  kafka:
+    # 扇出 topic 名
+    fanout-topic: im-group-fanout
+    # 总开关：为 false 时退回同步扇出，便于灰度与快速回滚
+    fanout-enabled: true
+  group:
+    # 群成员数跨过该值即翻成读扩散（fanout_mode=1）。
+    # 取值依据：实测写扩散与 O(N) 扇出的交叉点在 N≈900~1200，取 2000 留约 2x 安全余量。
+    # 只升不降 —— 缩减群的业务规则未定，见 docs/群聊瓶颈解决方案.md 3.7。
+    read-diffusion-threshold: 2000
+    # 群接收方达到该数才用 presence 两段式查询；小群 key 少，多一次往返反而更慢。
+    # 取值依据：A 系列实测 500 人群退步 10%、2000 人群提升 31%，交叉点在 500~2000。
+    presence-filter-threshold: 1000
+
+jwt:
+  accessToken:
+    expireIn: 1800 #半个小时
+    secret: MIIBIjANBgkq
+  refreshToken:
+    expireIn: 604800 #7天
+    secret: IKDiqVmn0VFU
+
+# 登录拦截器放行的 URL
+auth-interceptor:
+  exclude-paths:
+    - /login
+    - /logout
+    - /register
+    - /refreshToken
+    - /*/upload
+    - /swagger/**
+    - /v3/api-docs/**
+    - /swagger-resources/**
+    - /swagger-ui.html
+    - /swagger-ui/**
+    - /doc.html
+
+
+

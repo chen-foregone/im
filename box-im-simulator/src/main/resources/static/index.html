@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>盒子IM压测模拟器</title>
+  <link rel="icon" href="/images/logo-lightning.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/simulator.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="shell__head">
+      <div class="shell__title-row">
+        <h1>盒子IM压测模拟器</h1>
+      </div>
+      <p class="shell__lead">按顺序完成：先批量登录并保持在线，再选择模拟私聊或群聊。</p>
+    </header>
+
+    <nav class="steps" aria-label="流程步骤" id="steps-nav">
+      <button type="button" class="steps__seg steps__seg--clickable is-hidden" id="step-nav-1-btn" title="返回上一步：批量登录">
+        <span class="steps__num">1</span>
+        <span class="steps__label">批量登录</span>
+      </button>
+      <div class="steps__seg steps__seg--active" id="step-nav-1-static">
+        <span class="steps__num">1</span>
+        <span class="steps__label">批量登录</span>
+      </div>
+      <span class="steps__bar" id="steps-bar-1" aria-hidden="true"></span>
+
+      <button type="button" class="steps__seg steps__seg--done steps__seg--clickable is-hidden" id="step-nav-2-btn" title="返回上一步：选择场景">
+        <span class="steps__num">2</span>
+        <span class="steps__label">选择场景</span>
+      </button>
+      <div class="steps__seg steps__seg--muted" id="step-nav-2-static">
+        <span class="steps__num">2</span>
+        <span class="steps__label">选择场景</span>
+      </div>
+      <span class="steps__bar" id="steps-bar-2" aria-hidden="true"></span>
+
+      <div class="steps__seg steps__seg--muted" id="step-nav-3">
+        <span class="steps__num">3</span>
+        <span class="steps__label" id="step3-nav-label">执行任务</span>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- Step 1 -->
+      <section class="wizard-block" id="wizard-step-1">
+        <section class="panel" id="batch-panel">
+          <h2 class="panel-title">批量登录</h2>
+          <form class="form" id="batch-form">
+            <div class="field">
+              <label for="user-count">模拟在线用户数(最大10000)</label>
+              <input id="user-count" name="userCount" type="number" min="1" max="10000" step="1" value="100" required />
+            </div>
+            <div class="field">
+              <label for="terminal">登录终端类型</label>
+              <select id="terminal" name="terminal">
+                <option value="0">Web</option>
+                <option value="1">App</option>
+              </select>
+            </div>
+            <div class="actions">
+              <button type="submit" class="btn primary" id="batch-submit">开始模拟登录</button>
+              <button type="button" class="btn ghost" id="batch-stop">断开全部模拟连接</button>
+            </div>
+          </form>
+          <p class="alert is-hidden" id="batch-error" role="alert"></p>
+          <div class="result is-hidden" id="batch-result">
+            <h2>执行结果</h2>
+            <dl class="stats" id="batch-stats"></dl>
+            <div class="samples is-hidden" id="batch-samples">
+              <h3>失败样例（最多 10 条）</h3>
+              <table>
+                <thead><tr><th>用户名</th><th>原因</th></tr></thead>
+                <tbody id="batch-samples-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <div class="wizard-next">
+          <button type="button" class="btn-next" id="btn-go-step2" disabled>下一步：选择场景</button>
+        </div>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="wizard-block is-hidden" id="wizard-step-2">
+        <section class="panel panel--mode">
+          <h2 class="panel-title">选择模拟场景</h2>
+          <p class="lead">批量登录已完成，请选择接下来要执行的模拟类型。</p>
+          <div class="choices">
+            <button type="button" class="choice choice--primary" id="pick-private">
+              <span class="choice__title">模拟私聊</span>
+              <span class="choice__desc">按发送方 / 接收方 / 轮次向好友发 HTTP 私聊并统计WS消息量</span>
+            </button>
+            <button type="button" class="choice choice--muted" id="pick-group">
+              <span class="choice__title">模拟群聊</span>
+              <span class="choice__desc">选择不同规模的群，多用户轮发 HTTP 群消息并统计WS消息量</span>
+            </button>
+          </div>
+        </section>
+        <div class="wizard-toolbar">
+          <button type="button" class="btn-back" id="btn-back-2-to-1" title="返回上一步：批量登录">返回上一步</button>
+        </div>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="wizard-block is-hidden" id="wizard-step-3">
+        <section class="panel is-hidden" id="panel-private">
+          <h2 class="panel-title">模拟私聊</h2>
+          <form class="form" id="private-form">
+            <div class="field">
+              <label for="sender-count">发送人数(最大1000)</label>
+              <input id="sender-count" type="number" min="1" max="1000" step="1" value="10" required />
+            </div>
+            <div class="field">
+              <label for="receiver-count">接收人数(最大1000)</label>
+              <input id="receiver-count" type="number" min="1" max="1000" step="1" value="10" required />
+            </div>
+            <div class="field">
+              <label for="send-rounds">发送轮次</label>
+              <input id="send-rounds" type="number" min="1" step="1" value="10" required />
+            </div>
+            <div class="field">
+              <label for="private-max-send-qps">发送速率限制 (QPS)</label>
+              <input id="private-max-send-qps" type="number" min="1" step="1" placeholder="不限制" />
+            </div>
+            <p class="total-line" id="private-total-line"><strong>总请求量: </strong><span id="private-total-val">8</span></p>
+            <div class="actions">
+              <button type="submit" class="btn primary" id="private-submit">开始模拟私聊</button>
+              <button type="button" class="btn ghost" id="private-stop-sim">停止模拟</button>
+            </div>
+          </form>
+          <p class="alert is-hidden" id="private-error" role="alert"></p>
+          <div class="result is-hidden" id="private-result">
+            <h2>执行结果</h2>
+            <dl class="stats" id="private-stats"></dl>
+            <div class="samples is-hidden" id="private-samples-wrap">
+              <h3>失败样例（最多 10 条）</h3>
+              <table>
+                <thead id="private-samples-head"></thead>
+                <tbody id="private-samples-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel is-hidden" id="panel-group">
+          <h2 class="panel-title">模拟群聊</h2>
+          <p class="hint-top">
+            按群名称前缀从库中取群；所选发送用户须均在目标群内且已批量登录。收尾阶段按时间统计 WS 群消息条数（群内多成员会放大该数值）。
+          </p>
+          <form class="form" id="group-form">
+            <div class="field">
+              <label for="group-scale">群规模</label>
+              <select id="group-scale">
+                <option value="TEN" data-members="10">十人群</option>
+                <option value="HUNDRED" data-members="100">百人群</option>
+                <option value="THOUSAND" data-members="1000">千人群</option>
+                <option value="TEN_THOUSAND" data-members="10000">万人群</option>
+                <option value="FIVE_HUNDRED" data-members="500">五百人群</option>
+                <option value="TWO_THOUSAND" data-members="2000">两千人群</option>
+                <option value="FIVE_THOUSAND" data-members="5000">五千人群</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="g-sender-count">发送人数(最大1000)</label>
+              <input id="g-sender-count" type="number" min="1" max="1000" step="1" value="10" required />
+            </div>
+            <div class="field">
+              <label for="g-receiver-groups">接收群数量(最大10)</label>
+              <input id="g-receiver-groups" type="number" min="1" max="10" step="1" value="5" required />
+            </div>
+            <div class="field">
+              <label for="g-send-rounds">发送轮次</label>
+              <input id="g-send-rounds" type="number" min="1" step="1" value="10" required />
+            </div>
+            <div class="field">
+              <label for="g-online-members">群在线人数(用于计算ws推送量)</label>
+              <input id="g-online-members" type="number" min="1" step="1" value="10" required />
+            </div>
+            <div class="field">
+              <label for="group-max-send-qps">发送速率限制 (QPS)</label>
+              <input id="group-max-send-qps" type="number" min="1" step="1" placeholder="不限制" />
+            </div>
+            <p class="total-line" id="group-http-total-line"><strong>总 HTTP 请求量: </strong><span id="group-http-total-val">8</span></p>
+            <p class="total-line" id="group-ws-total-line"><strong>总 WS 推送量: </strong><span id="group-ws-total-val">72</span></p>
+            <div class="actions">
+              <button type="submit" class="btn primary" id="group-submit">开始模拟群聊</button>
+              <button type="button" class="btn ghost" id="group-stop-sim">停止模拟</button>
+            </div>
+          </form>
+          <p class="alert is-hidden" id="group-error" role="alert"></p>
+          <div class="result is-hidden" id="group-result">
+            <h2>执行结果</h2>
+            <dl class="stats" id="group-stats"></dl>
+            <div class="samples is-hidden" id="group-samples-wrap">
+              <h3>失败样例（最多 10 条）</h3>
+              <table>
+                <thead id="group-samples-head"></thead>
+                <tbody id="group-samples-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <div class="wizard-toolbar">
+          <button type="button" class="btn-back" id="btn-back-3-to-2" title="返回上一步：选择场景">返回上一步</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <style>
+    .is-hidden { display: none !important; }
+  </style>
+  <script src="/js/simulator.js?v=2"></script>
+</body>
+</html>
