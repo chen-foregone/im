@@ -1,0 +1,27 @@
+﻿feat(verify): 暴露正确性验证接口，支撑 A2-A4 可复用测试
+
+背景：压测脚本只报数不断言，改了代码没有人会告诉你坏了。
+A1（覆盖完整性）作为判据已经在 status 里返回，但 A2-A4 需要按步测量：
+「发几条 -> 看水位 -> 改群成员 -> 再发几条」，批量压测接口给不了这种节奏。
+
+新增 /simulator/verify/*：
+- GET  /token?userId            取会话 accessToken
+- GET  /watermarks?groupId      该群每个在线会话的覆盖水位 userId -> maxMessageId
+- POST /reset                   清零水位，用于划基准线
+- POST /send                    以指定用户身份发一条群消息，返回 messageId
+
+为什么把 token 暴露出去而不是在这里实现退群/入群：退群必须走真实的
+DELETE /group/quit/{groupId}，测试脚本拿着 token 直接调业务接口，
+验的就是真实业务路径，而不是我们另开的一条捷径。
+
+配套：IM/verify/（不在任何 git 仓库内）
+- Verify.psm1     公共库：clean+登录+等排空、token、水位、受控发送、断言、JSON 报告
+- run-verify.ps1  唯一入口，用例失败返回非 0 退出码
+- cases/A4-membership.ps1
+
+A4 首发结果（100 在线，1000 人群）：
+  A4.1 退群前收到信号       PASS
+  A4.2 退群接口成功         PASS
+  A4.3 退群后不再收到信号   FAIL  <- 复现 3.17 遗留 2：退群未从在线集移除
+  A4.4 重新入群成功         PASS
+  A4.5 重新入群后信号恢复   PASS

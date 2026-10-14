@@ -1,0 +1,32 @@
+Step 0b: 扇出/投递链路细粒度探针（定位真正的天花板）
+
+背景：前几轮一直在投递侧找瓶颈（帧数、字节数、presence key 数），但都没有吞吐收益。
+本提交加入进程内计时器，把「扇出」与「投递」两段各自拆开，得到可归因的结论。
+
+探针（由 im.perf.probe-enabled 控制，默认 false）：
+- im-common  PerfCounters：LongAdder 计数器，关闭时每个调用点只有一次 volatile 判断
+- im-server PerfCountDumper：每 500ms 落一行 CSV 到 log/perf-counts.csv
+- im-platform FanoutPerfCountDumper：落盘到另一个文件（两个 JVM 各有静态副本，
+  共用一个文件会被对方的 TRUNCATE 截断）
+
+打点位置：
+- RedisMQPullTask.run            拉取批次耗时（按队列分开）、反序列化耗时
+- GroupMessageProcessor.process  处理循环耗时、帧数
+- MessageProtocolEncoder.encode  编码耗时、字节数
+- GroupMessageServiceImpl.executeFanout  总耗时、DB、成员列表
+- IMSender.resolveOnlineRecvKeys presence MGET 耗时、key 数、在线数
+
+实测结论（万人群 N=10000 / 100 在线 / 1000 条消息）：
+1. 群队列长度全程为 0，im-server 消费线程只忙 41% —— 它被上游限速，不是约束。
+   （初稿曾据 kafka-consumer-groups.sh 的 3 个采样点判「lag 全程为 0」而排除扇出；
+    该命令单次耗时 4.8s，看不到瞬时积压，该读法已作废并写入文档更正。）
+2. 扇出每条消息 39ms，其中 47% 是与在线人数无关的 O(成员数)：
+   presence MGET 14.5ms(38%) + 成员列表构建与过滤 8.3ms(22%)。
+3. 6 个 Kafka 消费线程占用 88-92% → 扇出上限 154 条/s。这是真正的硬顶。
+4. 投递侧 channel.writeAndFlush 16.4us/帧（编码仅 2.8us/帧），但远未受压。
+
+对路线图的影响：群维度 pub/sub 升为 P1；第 6 项 Gateway 合并降回 P2
+（投递侧在扇出打通前不是约束）。详见 docs/群聊瓶颈解决方案.md §3.14。
+
+同时修正：boxim-svc.ps1 的 Spring Boot 参数必须放在 -jar 之后，
+否则 JVM 报 'Unrecognized option'。

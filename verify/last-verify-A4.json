@@ -1,0 +1,57 @@
+﻿{
+    "at":  "2026-10-09T18:38:55",
+    "passed":  10,
+    "failed":  0,
+    "assertions":  [
+                       {
+                           "name":  "A4.0a watcher is in the online set after login",
+                           "ok":  true,
+                           "detail":  "SISMEMBER=1"
+                       },
+                       {
+                           "name":  "A4.0b watcher and sender are online",
+                           "ok":  true,
+                           "detail":  "watcher=True sender=True"
+                       },
+                       {
+                           "name":  "A4.0c sends produced messages",
+                           "ok":  true,
+                           "detail":  "sent=3/3 msg=成功 id=499406"
+                       },
+                       {
+                           "name":  "A4.1 watcher receives signals before quit",
+                           "ok":  true,
+                           "detail":  "baseline watermark=499407"
+                       },
+                       {
+                           "name":  "A4.2 quit-group API succeeds",
+                           "ok":  true,
+                           "detail":  "成功"
+                       },
+                       {
+                           "name":  "A4.2b watcher removed from online set on quit",
+                           "ok":  true,
+                           "detail":  "SISMEMBER=0"
+                       },
+                       {
+                           "name":  "A4.3 watcher stops receiving after quit",
+                           "ok":  true,
+                           "detail":  "quit=499408 after=499408 (sent 3 more)"
+                       },
+                       {
+                           "name":  "A4.4 re-invite API succeeds",
+                           "ok":  true,
+                           "detail":  "成功"
+                       },
+                       {
+                           "name":  "A4.4b watcher back in online set on re-invite",
+                           "ok":  true,
+                           "detail":  "SISMEMBER=1"
+                       },
+                       {
+                           "name":  "A4.5 signals resume after re-invite",
+                           "ok":  true,
+                           "detail":  "resumed=499415 baseline=499407"
+                       }
+                   ]
+}

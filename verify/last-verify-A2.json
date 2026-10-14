@@ -1,0 +1,42 @@
+﻿{
+    "at":  "2026-10-09T18:38:34",
+    "passed":  7,
+    "failed":  0,
+    "assertions":  [
+                       {
+                           "name":  "A2.1 all sends produced a server message id",
+                           "ok":  true,
+                           "detail":  "ledger=12/12 fail=0"
+                       },
+                       {
+                           "name":  "A2.2 every online session watermark reached its target",
+                           "ok":  true,
+                           "detail":  "behind=0 maxSent=499405 who="
+                       },
+                       {
+                           "name":  "A2.3 sampled users can reach the head",
+                           "ok":  true,
+                           "detail":  "checked=5 headBehind=0"
+                       },
+                       {
+                           "name":  "A2.4 no message is missing from any sampled timeline",
+                           "ok":  true,
+                           "detail":  "misses=0 across 5 users"
+                       },
+                       {
+                           "name":  "A2.5 no duplicate ids within a timeline",
+                           "ok":  true,
+                           "detail":  "dups=0"
+                       },
+                       {
+                           "name":  "A2.6 ids strictly ascending",
+                           "ok":  true,
+                           "detail":  "out-of-order pairs=0"
+                       },
+                       {
+                           "name":  "A2.7 content matches what was sent",
+                           "ok":  true,
+                           "detail":  "mismatches=0"
+                       }
+                   ]
+}

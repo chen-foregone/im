@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <!--
+    仅供 box-im 性能测试使用，通过 mvn -s 显式指定，
+    不改动全局的 ~/.m2/settings.xml，避免影响其它项目。
+  -->
+  <mirrors>
+    <mirror>
+      <id>aliyun-public</id>
+      <name>Aliyun Public</name>
+      <url>https://maven.aliyun.com/repository/public</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>

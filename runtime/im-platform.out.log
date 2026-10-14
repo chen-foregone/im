@@ -1,0 +1,1711 @@
+18:32:30,904 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+18:32:30,910 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Here is a list of configurators discovered as a service, by rank: 
+18:32:30,911 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+18:32:30,911 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+18:32:30,911 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+18:32:30,919 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+18:32:30,919 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+18:32:30,920 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+18:32:30,974 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+18:32:30,975 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+18:32:30,975 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 55 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+18:32:30,975 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+18:32:30,976 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+18:32:30,978 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:32:30,979 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/classes/!/logback.xml]
+18:32:30,992 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2c767a52 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+18:32:31,276 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@619713e5 - Adding [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+18:32:31,276 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2c767a52 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+18:32:31,284 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+18:32:31,284 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+18:32:31,284 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+18:32:31,284 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+18:32:31,284 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+18:32:31,321 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+18:32:31,321 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+18:32:31,322 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+18:32:31,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+18:32:31,327 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [CONSOLE] not referenced. Skipping further processing.
+18:32:31,327 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+18:32:31,327 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@708f5957 - End of configuration.
+18:32:31,333 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@68999068 - Registering current configuration as safe fallback point
+18:32:31,333 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 357 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+18:32:32,382 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@26a4842b - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+18:32:32,405 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@619713e5 - Adding [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+18:32:32,405 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@26a4842b - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+18:32:32,409 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+18:32:32,409 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+18:32:32,409 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+18:32:32,409 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+18:32:32,409 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+18:32:32,417 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+18:32:32,418 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+18:32:32,419 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+18:32:32,419 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+18:32:32,419 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+18:32:32,419 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+18:32:32,419 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+18:32:32,419 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+18:32:32,420 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+18:32:32,420 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+18:32:32,420 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+18:32:32,420 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+18:32:32,420 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+18:32:32,420 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+18:32:32,420 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+18:32:32,420 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+18:32:32,420 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+18:32:32,420 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:32:32,434 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:32:32,465 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+18:32:32,465 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+18:32:32,466 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7e38a7fe - Propagating INFO level on Logger[ROOT] onto the JUL framework
+18:32:32,466 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+18:32:32,466 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@366ef90e - End of configuration.
+18:32:32,466 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@33e01298 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2026-10-09 18:32:32.684 [main] INFO  com.bx.implatform.IMPlatformApp - Starting IMPlatformApp v4.0.0 using Java 17.0.12 with PID 17252 (D:\Software\SourceCode\IM\box-im\im-platform\target\im-platform.jar started by Desktop009 in D:\Software\SourceCode\IM\box-im\im-platform)
+2026-10-09 18:32:32.689 [main] INFO  com.bx.implatform.IMPlatformApp - The following 1 profile is active: "dev"
+2026-10-09 18:32:37.242 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-09 18:32:37.258 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-09 18:32:37.342 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+2026-10-09 18:32:39.365 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.redis.redisson-org.redisson.spring.starter.RedissonProperties' of type [org.redisson.spring.starter.RedissonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-09 18:32:39.379 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.data.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-09 18:32:39.398 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.redisson.spring.starter.RedissonAutoConfiguration' of type [org.redisson.spring.starter.RedissonAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-09 18:32:39.709 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2026-10-09 18:32:40.422 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6380
+2026-10-09 18:32:40.539 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6380
+2026-10-09 18:32:40.591 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisson' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-09 18:32:40.638 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonConnectionFactory' of type [org.redisson.spring.data.connection.RedissonConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-09 18:32:40.641 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.bx.implatform.config.RedisConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-09 18:32:41.156 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2026-10-09 18:32:41.177 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-09 18:32:41.178 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2026-10-09 18:32:41.253 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-09 18:32:41.254 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8423 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-10-09 18:32:43.174 [main] ERROR com.bx.implatform.thirdparty.MinioService - 查询bucket失败
+java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-10-09 18:32:43.194 [main] ERROR com.bx.implatform.thirdparty.MinioService - 创建bucket失败,
+java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-10-09 18:32:43.198 [main] ERROR com.bx.implatform.thirdparty.MinioService - 创建bucket失败,
+java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-10-09 18:32:43.787 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-09 18:32:44.173 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c2273f6
+2026-10-09 18:32:44.176 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-09 18:32:47.393 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-10-09 18:32:47.606 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2026-10-09 18:32:47.672 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-09 18:32:47.756 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:32:48.029 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:32:48.029 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:32:48.030 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541968027
+2026-10-09 18:32:48.049 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-09 18:32:48.070 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-09 18:32:48.071 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:32:48.084 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:32:48.084 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:32:48.085 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541968084
+2026-10-09 18:32:48.093 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-09 18:32:48.096 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-09 18:32:48.097 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:32:48.109 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:32:48.110 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:32:48.110 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541968109
+2026-10-09 18:32:48.118 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-09 18:32:48.121 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-09 18:32:48.121 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:32:48.134 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:32:48.135 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:32:48.136 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541968134
+2026-10-09 18:32:48.142 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-09 18:32:48.144 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-09 18:32:48.144 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:32:48.158 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:32:48.158 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:32:48.158 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541968157
+2026-10-09 18:32:48.167 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-09 18:32:48.170 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-09 18:32:48.171 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:32:48.184 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:32:48.185 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:32:48.185 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541968184
+2026-10-09 18:32:48.191 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-09 18:32:48.234 [main] INFO  com.bx.implatform.IMPlatformApp - Started IMPlatformApp in 16.687 seconds (process running for 17.78)
+2026-10-09 18:32:48.286 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:32:49.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:32:49.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:32:49.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:32:49.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:32:49.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:32:49.196 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:32:49.197 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-09 18:32:49.197 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-09 18:32:49.200 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-09 18:32:49.201 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-09 18:32:49.201 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-09 18:32:49.201 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-09 18:32:49.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.248 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-1-8b3f062d-c50d-421b-aa5a-06fd072d59d3
+2026-10-09 18:32:49.250 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.257 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-3-67fdf73b-f4ed-4d42-aaad-71d8a60923d1
+2026-10-09 18:32:49.258 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.265 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-4-db31d77d-ff31-44b4-956b-66838b78fe98
+2026-10-09 18:32:49.266 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.288 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-6-9bbddb00-6540-473f-992f-59083a18a01f
+2026-10-09 18:32:49.288 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-5-4f8888ed-b2b0-4c36-a849-892994af80a6
+2026-10-09 18:32:49.289 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-2-1a80e544-d28f-4e4f-849e-65c1eaf4b32a
+2026-10-09 18:32:49.289 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.289 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:49.289 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-09 18:32:52.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-1-8b3f062d-c50d-421b-aa5a-06fd072d59d3', protocol='range'}
+2026-10-09 18:32:52.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-6-9bbddb00-6540-473f-992f-59083a18a01f', protocol='range'}
+2026-10-09 18:32:52.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-3-67fdf73b-f4ed-4d42-aaad-71d8a60923d1', protocol='range'}
+2026-10-09 18:32:52.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-4-db31d77d-ff31-44b4-956b-66838b78fe98', protocol='range'}
+2026-10-09 18:32:52.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-5-4f8888ed-b2b0-4c36-a849-892994af80a6', protocol='range'}
+2026-10-09 18:32:52.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-2-1a80e544-d28f-4e4f-849e-65c1eaf4b32a', protocol='range'}
+2026-10-09 18:32:52.494 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Finished assignment for group at generation 54: {consumer-im-platform-group-fanout-3-67fdf73b-f4ed-4d42-aaad-71d8a60923d1=Assignment(partitions=[im-group-fanout-2]), consumer-im-platform-group-fanout-4-db31d77d-ff31-44b4-956b-66838b78fe98=Assignment(partitions=[im-group-fanout-3]), consumer-im-platform-group-fanout-6-9bbddb00-6540-473f-992f-59083a18a01f=Assignment(partitions=[im-group-fanout-5]), consumer-im-platform-group-fanout-5-4f8888ed-b2b0-4c36-a849-892994af80a6=Assignment(partitions=[im-group-fanout-4]), consumer-im-platform-group-fanout-1-8b3f062d-c50d-421b-aa5a-06fd072d59d3=Assignment(partitions=[im-group-fanout-0]), consumer-im-platform-group-fanout-2-1a80e544-d28f-4e4f-849e-65c1eaf4b32a=Assignment(partitions=[im-group-fanout-1])}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-3-67fdf73b-f4ed-4d42-aaad-71d8a60923d1', protocol='range'}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-5-4f8888ed-b2b0-4c36-a849-892994af80a6', protocol='range'}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-6-9bbddb00-6540-473f-992f-59083a18a01f', protocol='range'}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-2-1a80e544-d28f-4e4f-849e-65c1eaf4b32a', protocol='range'}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-4-db31d77d-ff31-44b4-956b-66838b78fe98', protocol='range'}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=54, memberId='consumer-im-platform-group-fanout-1-8b3f062d-c50d-421b-aa5a-06fd072d59d3', protocol='range'}
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-2])
+2026-10-09 18:32:52.502 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-0])
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-4])
+2026-10-09 18:32:52.501 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-5])
+2026-10-09 18:32:52.502 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-1])
+2026-10-09 18:32:52.502 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-3])
+2026-10-09 18:32:52.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-3
+2026-10-09 18:32:52.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-1
+2026-10-09 18:32:52.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-5
+2026-10-09 18:32:52.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-4
+2026-10-09 18:32:52.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-0
+2026-10-09 18:32:52.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-2
+2026-10-09 18:32:52.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-3 to the committed offset FetchPosition{offset=38354, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-09 18:32:52.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-4 to the committed offset FetchPosition{offset=38628, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-09 18:32:52.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-0 to the committed offset FetchPosition{offset=39062, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-09 18:32:52.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-1 to the committed offset FetchPosition{offset=38817, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-09 18:32:52.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-2 to the committed offset FetchPosition{offset=38718, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-09 18:32:52.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-5 to the committed offset FetchPosition{offset=38787, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-09 18:32:52.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-1]
+2026-10-09 18:32:52.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-4]
+2026-10-09 18:32:52.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-5]
+2026-10-09 18:32:52.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-0]
+2026-10-09 18:32:52.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-2]
+2026-10-09 18:32:52.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-3]
+2026-10-09 18:32:55.965 [http-nio-8888-exec-52] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-09 18:32:55.967 [http-nio-8888-exec-52] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-09 18:32:55.974 [http-nio-8888-exec-52] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2026-10-09 18:33:00.029 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:4,终端：0
+2026-10-09 18:33:00.072 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:54,终端：0
+2026-10-09 18:33:00.126 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:37,终端：0
+2026-10-09 18:33:00.217 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:47,终端：0
+2026-10-09 18:33:00.314 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:7,终端：0
+2026-10-09 18:33:00.339 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:27,终端：0
+2026-10-09 18:33:00.380 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:45,终端：0
+2026-10-09 18:33:00.428 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:58,终端：0
+2026-10-09 18:33:00.478 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:35,终端：0
+2026-10-09 18:33:00.522 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:46,终端：0
+2026-10-09 18:33:00.568 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:38,终端：0
+2026-10-09 18:33:00.611 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:6,终端：0
+2026-10-09 18:33:00.664 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:44,终端：0
+2026-10-09 18:33:00.712 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:31,终端：0
+2026-10-09 18:33:00.731 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:59,终端：0
+2026-10-09 18:33:00.765 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:49,终端：0
+2026-10-09 18:33:00.788 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:12,终端：0
+2026-10-09 18:33:00.817 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:48,终端：0
+2026-10-09 18:33:00.841 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:40,终端：0
+2026-10-09 18:33:00.856 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:43,终端：0
+2026-10-09 18:33:00.873 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:30,终端：0
+2026-10-09 18:33:00.895 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:56,终端：0
+2026-10-09 18:33:00.928 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:23,终端：0
+2026-10-09 18:33:00.948 [pool-2-thread-5] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:36,终端：0
+2026-10-09 18:33:01.427 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:55,终端：0
+2026-10-09 18:33:01.494 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:60,终端：0
+2026-10-09 18:33:01.513 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:3,终端：0
+2026-10-09 18:33:01.540 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:24,终端：0
+2026-10-09 18:33:01.562 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:25,终端：0
+2026-10-09 18:33:01.579 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:28,终端：0
+2026-10-09 18:33:01.605 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:17,终端：0
+2026-10-09 18:33:01.630 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:22,终端：0
+2026-10-09 18:33:01.666 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:41,终端：0
+2026-10-09 18:33:01.706 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:42,终端：0
+2026-10-09 18:33:01.734 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:21,终端：0
+2026-10-09 18:33:01.752 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:9,终端：0
+2026-10-09 18:33:01.777 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:51,终端：0
+2026-10-09 18:33:01.801 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:11,终端：0
+2026-10-09 18:33:01.820 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:2,终端：0
+2026-10-09 18:33:01.842 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:14,终端：0
+2026-10-09 18:33:01.861 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:16,终端：0
+2026-10-09 18:33:01.892 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:18,终端：0
+2026-10-09 18:33:01.917 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:8,终端：0
+2026-10-09 18:33:01.944 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:1,终端：0
+2026-10-09 18:33:01.976 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:39,终端：0
+2026-10-09 18:33:02.006 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:29,终端：0
+2026-10-09 18:33:02.031 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:19,终端：0
+2026-10-09 18:33:02.055 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:15,终端：0
+2026-10-09 18:33:02.081 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:20,终端：0
+2026-10-09 18:33:02.127 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:13,终端：0
+2026-10-09 18:33:02.169 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:57,终端：0
+2026-10-09 18:33:02.206 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:52,终端：0
+2026-10-09 18:33:02.234 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:26,终端：0
+2026-10-09 18:33:02.284 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:10,终端：0
+2026-10-09 18:33:02.310 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:34,终端：0
+2026-10-09 18:33:02.345 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:53,终端：0
+2026-10-09 18:33:02.367 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:5,终端：0
+2026-10-09 18:33:02.397 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:50,终端：0
+2026-10-09 18:33:02.416 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:32,终端：0
+2026-10-09 18:33:02.432 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:33,终端：0
+2026-10-09 18:33:02.452 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:69,终端：0
+2026-10-09 18:33:02.477 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:66,终端：0
+2026-10-09 18:33:02.492 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:71,终端：0
+2026-10-09 18:33:02.510 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:81,终端：0
+2026-10-09 18:33:02.532 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:68,终端：0
+2026-10-09 18:33:02.553 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:64,终端：0
+2026-10-09 18:33:02.572 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:63,终端：0
+2026-10-09 18:33:02.609 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:72,终端：0
+2026-10-09 18:33:02.647 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:94,终端：0
+2026-10-09 18:33:02.669 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:86,终端：0
+2026-10-09 18:33:02.738 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:75,终端：0
+2026-10-09 18:33:02.779 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:62,终端：0
+2026-10-09 18:33:02.811 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:84,终端：0
+2026-10-09 18:33:02.844 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:87,终端：0
+2026-10-09 18:33:02.865 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:83,终端：0
+2026-10-09 18:33:02.893 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:61,终端：0
+2026-10-09 18:33:02.918 [http-nio-8888-exec-46] INFO  org.apache.kafka.clients.producer.ProducerConfig - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+2026-10-09 18:33:02.919 [http-nio-8888-exec-46] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = im-platform-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 5000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2026-10-09 18:33:02.922 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:77,终端：0
+2026-10-09 18:33:02.924 [http-nio-8888-exec-46] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-09 18:33:02.955 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:82,终端：0
+2026-10-09 18:33:02.980 [http-nio-8888-exec-46] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-09 18:33:02.981 [http-nio-8888-exec-46] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-09 18:33:02.981 [http-nio-8888-exec-46] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791541982980
+2026-10-09 18:33:02.981 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:73,终端：0
+2026-10-09 18:33:02.998 [kafka-producer-network-thread | im-platform-producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=im-platform-producer-1] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-09 18:33:03.011 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:70,终端：0
+2026-10-09 18:33:03.031 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:78,终端：0
+2026-10-09 18:33:03.046 [http-nio-8888-exec-46] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:03.065 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:74,终端：0
+2026-10-09 18:33:03.086 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:65,终端：0
+2026-10-09 18:33:03.112 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:80,终端：0
+2026-10-09 18:33:03.150 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:89,终端：0
+2026-10-09 18:33:03.173 [http-nio-8888-exec-44] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:03.173 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:96,终端：0
+2026-10-09 18:33:03.198 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:76,终端：0
+2026-10-09 18:33:03.212 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:92,终端：0
+2026-10-09 18:33:03.232 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:88,终端：0
+2026-10-09 18:33:03.242 [http-nio-8888-exec-8] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:03.274 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:99,终端：0
+2026-10-09 18:33:03.301 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:67,终端：0
+2026-10-09 18:33:03.320 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:85,终端：0
+2026-10-09 18:33:03.338 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:93,终端：0
+2026-10-09 18:33:03.359 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:100,终端：0
+2026-10-09 18:33:03.395 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:79,终端：0
+2026-10-09 18:33:03.412 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:95,终端：0
+2026-10-09 18:33:03.442 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:98,终端：0
+2026-10-09 18:33:03.471 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:97,终端：0
+2026-10-09 18:33:03.509 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:91,终端：0
+2026-10-09 18:33:03.558 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:90,终端：0
+2026-10-09 18:33:23.583 [http-nio-8888-exec-21] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 退出群聊，群聊id:1102,群聊名称:千人群2,用户id:3
+2026-10-09 18:33:23.630 [http-nio-8888-exec-9] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:23.679 [http-nio-8888-exec-50] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:23.721 [http-nio-8888-exec-52] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:31.893 [http-nio-8888-exec-37] WARN  c.b.implatform.service.impl.GroupMemberServiceImpl - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a5425e0] Transaction not enabled
+2026-10-09 18:33:31.955 [http-nio-8888-exec-37] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 邀请进入群聊，群聊id:1102,群聊名称:千人群2,被邀请用户id:[3]
+2026-10-09 18:33:32.007 [http-nio-8888-exec-26] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:32.051 [http-nio-8888-exec-33] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:32.092 [http-nio-8888-exec-2] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:33:48.230 [scheduled-task-4] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:34:39.706 [pool-2-thread-14] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:28,终端：0
+2026-10-09 18:34:39.904 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:46,终端：0
+2026-10-09 18:34:39.919 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:5,终端：0
+2026-10-09 18:34:39.938 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:25,终端：0
+2026-10-09 18:34:39.970 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:13,终端：0
+2026-10-09 18:34:40.004 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:36,终端：0
+2026-10-09 18:34:40.025 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:41,终端：0
+2026-10-09 18:34:40.042 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:4,终端：0
+2026-10-09 18:34:40.058 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:10,终端：0
+2026-10-09 18:34:40.089 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:24,终端：0
+2026-10-09 18:34:40.107 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:15,终端：0
+2026-10-09 18:34:40.125 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:12,终端：0
+2026-10-09 18:34:40.149 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:18,终端：0
+2026-10-09 18:34:40.171 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:11,终端：0
+2026-10-09 18:34:40.194 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:9,终端：0
+2026-10-09 18:34:40.212 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:19,终端：0
+2026-10-09 18:34:40.227 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:2,终端：0
+2026-10-09 18:34:40.243 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:8,终端：0
+2026-10-09 18:34:40.263 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:20,终端：0
+2026-10-09 18:34:40.277 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:14,终端：0
+2026-10-09 18:34:40.296 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:16,终端：0
+2026-10-09 18:34:40.309 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:7,终端：0
+2026-10-09 18:34:40.322 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:17,终端：0
+2026-10-09 18:34:40.339 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:34,终端：0
+2026-10-09 18:34:40.354 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:3,终端：0
+2026-10-09 18:34:40.373 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:22,终端：0
+2026-10-09 18:34:40.395 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:51,终端：0
+2026-10-09 18:34:40.418 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:6,终端：0
+2026-10-09 18:34:40.431 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:55,终端：0
+2026-10-09 18:34:40.448 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:59,终端：0
+2026-10-09 18:34:40.466 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:42,终端：0
+2026-10-09 18:34:40.482 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:49,终端：0
+2026-10-09 18:34:40.502 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:21,终端：0
+2026-10-09 18:34:40.517 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:40,终端：0
+2026-10-09 18:34:40.535 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:38,终端：0
+2026-10-09 18:34:40.551 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:23,终端：0
+2026-10-09 18:34:40.568 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:37,终端：0
+2026-10-09 18:34:40.583 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:27,终端：0
+2026-10-09 18:34:40.596 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:39,终端：0
+2026-10-09 18:34:40.609 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:45,终端：0
+2026-10-09 18:34:40.622 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:43,终端：0
+2026-10-09 18:34:40.647 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:26,终端：0
+2026-10-09 18:34:40.663 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:29,终端：0
+2026-10-09 18:34:40.678 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:33,终端：0
+2026-10-09 18:34:40.695 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:30,终端：0
+2026-10-09 18:34:40.711 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:56,终端：0
+2026-10-09 18:34:40.731 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:31,终端：0
+2026-10-09 18:34:40.743 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:32,终端：0
+2026-10-09 18:34:40.758 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:63,终端：0
+2026-10-09 18:34:40.782 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:65,终端：0
+2026-10-09 18:34:40.799 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:61,终端：0
+2026-10-09 18:34:40.811 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:53,终端：0
+2026-10-09 18:34:40.824 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:54,终端：0
+2026-10-09 18:34:40.841 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:47,终端：0
+2026-10-09 18:34:40.858 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:52,终端：0
+2026-10-09 18:34:40.871 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:57,终端：0
+2026-10-09 18:34:40.883 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:62,终端：0
+2026-10-09 18:34:40.897 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:60,终端：0
+2026-10-09 18:34:40.919 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:44,终端：0
+2026-10-09 18:34:40.936 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:69,终端：0
+2026-10-09 18:34:40.955 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:58,终端：0
+2026-10-09 18:34:40.971 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:66,终端：0
+2026-10-09 18:34:40.985 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:1,终端：0
+2026-10-09 18:34:41.000 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:77,终端：0
+2026-10-09 18:34:41.021 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:50,终端：0
+2026-10-09 18:34:41.035 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:72,终端：0
+2026-10-09 18:34:41.042 [http-nio-8888-exec-34] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:34:41.052 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:35,终端：0
+2026-10-09 18:34:41.065 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:67,终端：0
+2026-10-09 18:34:41.078 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:64,终端：0
+2026-10-09 18:34:41.096 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:78,终端：0
+2026-10-09 18:34:41.110 [http-nio-8888-exec-62] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:34:41.116 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:74,终端：0
+2026-10-09 18:34:41.130 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:48,终端：0
+2026-10-09 18:34:41.144 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:70,终端：0
+2026-10-09 18:34:41.159 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:84,终端：0
+2026-10-09 18:34:41.171 [http-nio-8888-exec-72] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:34:41.172 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:76,终端：0
+2026-10-09 18:34:41.197 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:81,终端：0
+2026-10-09 18:34:41.218 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:68,终端：0
+2026-10-09 18:34:41.258 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:80,终端：0
+2026-10-09 18:34:41.284 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:82,终端：0
+2026-10-09 18:34:41.306 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:75,终端：0
+2026-10-09 18:34:41.342 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:79,终端：0
+2026-10-09 18:34:41.368 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:83,终端：0
+2026-10-09 18:34:41.387 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:99,终端：0
+2026-10-09 18:34:41.402 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:94,终端：0
+2026-10-09 18:34:41.416 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:95,终端：0
+2026-10-09 18:34:41.434 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:96,终端：0
+2026-10-09 18:34:41.453 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:93,终端：0
+2026-10-09 18:34:41.466 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:86,终端：0
+2026-10-09 18:34:41.479 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:100,终端：0
+2026-10-09 18:34:41.493 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:85,终端：0
+2026-10-09 18:34:41.513 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:89,终端：0
+2026-10-09 18:34:41.528 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:73,终端：0
+2026-10-09 18:34:41.543 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:88,终端：0
+2026-10-09 18:34:41.560 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:71,终端：0
+2026-10-09 18:34:41.573 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:91,终端：0
+2026-10-09 18:34:41.587 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:98,终端：0
+2026-10-09 18:34:41.599 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:92,终端：0
+2026-10-09 18:34:41.612 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:87,终端：0
+2026-10-09 18:34:41.624 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:90,终端：0
+2026-10-09 18:34:41.635 [pool-2-thread-24] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:97,终端：0
+2026-10-09 18:34:48.237 [scheduled-task-5] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:35:01.502 [http-nio-8888-exec-77] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 退出群聊，群聊id:1102,群聊名称:千人群2,用户id:3
+2026-10-09 18:35:01.631 [http-nio-8888-exec-55] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:35:01.664 [http-nio-8888-exec-76] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:35:01.697 [http-nio-8888-exec-13] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:35:09.837 [http-nio-8888-exec-60] WARN  c.b.implatform.service.impl.GroupMemberServiceImpl - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c5b03e4] Transaction not enabled
+2026-10-09 18:35:09.865 [http-nio-8888-exec-60] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 邀请进入群聊，群聊id:1102,群聊名称:千人群2,被邀请用户id:[3]
+2026-10-09 18:35:10.011 [http-nio-8888-exec-66] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:35:10.048 [http-nio-8888-exec-49] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:35:10.090 [http-nio-8888-exec-11] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:35:48.224 [scheduled-task-6] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:36:03.005 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:22,终端：0
+2026-10-09 18:36:03.382 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:4,终端：0
+2026-10-09 18:36:03.461 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:28,终端：0
+2026-10-09 18:36:03.514 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:21,终端：0
+2026-10-09 18:36:03.538 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:27,终端：0
+2026-10-09 18:36:03.569 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:3,终端：0
+2026-10-09 18:36:03.598 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:20,终端：0
+2026-10-09 18:36:03.612 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:7,终端：0
+2026-10-09 18:36:03.627 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:16,终端：0
+2026-10-09 18:36:03.641 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:5,终端：0
+2026-10-09 18:36:03.691 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:10,终端：0
+2026-10-09 18:36:03.730 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:6,终端：0
+2026-10-09 18:36:03.749 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:14,终端：0
+2026-10-09 18:36:03.764 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:49,终端：0
+2026-10-09 18:36:03.779 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:13,终端：0
+2026-10-09 18:36:03.794 [pool-2-thread-11] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:2,终端：0
+2026-10-09 18:36:03.955 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:19,终端：0
+2026-10-09 18:36:03.969 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:8,终端：0
+2026-10-09 18:36:03.982 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:25,终端：0
+2026-10-09 18:36:03.996 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:34,终端：0
+2026-10-09 18:36:04.014 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:53,终端：0
+2026-10-09 18:36:04.037 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:1,终端：0
+2026-10-09 18:36:04.059 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:32,终端：0
+2026-10-09 18:36:04.078 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:23,终端：0
+2026-10-09 18:36:04.090 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:45,终端：0
+2026-10-09 18:36:04.113 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:41,终端：0
+2026-10-09 18:36:04.132 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:51,终端：0
+2026-10-09 18:36:04.151 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:57,终端：0
+2026-10-09 18:36:04.169 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:17,终端：0
+2026-10-09 18:36:04.188 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:58,终端：0
+2026-10-09 18:36:04.217 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:15,终端：0
+2026-10-09 18:36:04.249 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:40,终端：0
+2026-10-09 18:36:04.271 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:55,终端：0
+2026-10-09 18:36:04.286 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:35,终端：0
+2026-10-09 18:36:04.305 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:47,终端：0
+2026-10-09 18:36:04.327 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:11,终端：0
+2026-10-09 18:36:04.354 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:50,终端：0
+2026-10-09 18:36:04.381 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:24,终端：0
+2026-10-09 18:36:04.412 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:30,终端：0
+2026-10-09 18:36:04.441 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:36,终端：0
+2026-10-09 18:36:04.466 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:29,终端：0
+2026-10-09 18:36:04.490 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:48,终端：0
+2026-10-09 18:36:04.564 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:60,终端：0
+2026-10-09 18:36:04.580 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:46,终端：0
+2026-10-09 18:36:04.601 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:42,终端：0
+2026-10-09 18:36:04.622 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:43,终端：0
+2026-10-09 18:36:04.642 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:54,终端：0
+2026-10-09 18:36:04.665 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:65,终端：0
+2026-10-09 18:36:04.684 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:26,终端：0
+2026-10-09 18:36:04.699 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:39,终端：0
+2026-10-09 18:36:04.721 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:31,终端：0
+2026-10-09 18:36:04.757 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:59,终端：0
+2026-10-09 18:36:04.772 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:56,终端：0
+2026-10-09 18:36:04.813 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:66,终端：0
+2026-10-09 18:36:04.838 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:68,终端：0
+2026-10-09 18:36:04.862 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:81,终端：0
+2026-10-09 18:36:04.878 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:86,终端：0
+2026-10-09 18:36:04.896 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:70,终端：0
+2026-10-09 18:36:04.910 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:12,终端：0
+2026-10-09 18:36:04.926 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:9,终端：0
+2026-10-09 18:36:04.941 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:44,终端：0
+2026-10-09 18:36:04.958 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:76,终端：0
+2026-10-09 18:36:04.982 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:71,终端：0
+2026-10-09 18:36:04.995 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:87,终端：0
+2026-10-09 18:36:05.009 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:73,终端：0
+2026-10-09 18:36:05.031 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:69,终端：0
+2026-10-09 18:36:05.045 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:18,终端：0
+2026-10-09 18:36:05.060 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:75,终端：0
+2026-10-09 18:36:05.078 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:61,终端：0
+2026-10-09 18:36:05.093 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:74,终端：0
+2026-10-09 18:36:05.107 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:77,终端：0
+2026-10-09 18:36:05.120 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:38,终端：0
+2026-10-09 18:36:05.135 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:79,终端：0
+2026-10-09 18:36:05.151 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:52,终端：0
+2026-10-09 18:36:05.168 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:83,终端：0
+2026-10-09 18:36:05.182 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:93,终端：0
+2026-10-09 18:36:05.195 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:97,终端：0
+2026-10-09 18:36:05.210 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:95,终端：0
+2026-10-09 18:36:05.224 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:92,终端：0
+2026-10-09 18:36:05.239 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:64,终端：0
+2026-10-09 18:36:05.260 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:72,终端：0
+2026-10-09 18:36:05.272 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:84,终端：0
+2026-10-09 18:36:05.285 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:91,终端：0
+2026-10-09 18:36:05.296 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:99,终端：0
+2026-10-09 18:36:05.311 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:90,终端：0
+2026-10-09 18:36:05.328 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:33,终端：0
+2026-10-09 18:36:05.365 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:62,终端：0
+2026-10-09 18:36:05.382 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:89,终端：0
+2026-10-09 18:36:05.411 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:88,终端：0
+2026-10-09 18:36:05.426 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:37,终端：0
+2026-10-09 18:36:05.445 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:78,终端：0
+2026-10-09 18:36:05.460 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:80,终端：0
+2026-10-09 18:36:05.473 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:96,终端：0
+2026-10-09 18:36:05.487 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:85,终端：0
+2026-10-09 18:36:05.500 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:98,终端：0
+2026-10-09 18:36:05.515 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:94,终端：0
+2026-10-09 18:36:05.538 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:63,终端：0
+2026-10-09 18:36:05.557 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:100,终端：0
+2026-10-09 18:36:05.588 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:67,终端：0
+2026-10-09 18:36:05.609 [pool-2-thread-9] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:82,终端：0
+2026-10-09 18:36:06.468 [http-nio-8888-exec-89] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:06.514 [http-nio-8888-exec-90] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:06.561 [http-nio-8888-exec-49] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:06.740 [http-nio-8888-exec-91] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 退出群聊，群聊id:1102,群聊名称:千人群2,用户id:3
+2026-10-09 18:36:06.989 [http-nio-8888-exec-87] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:07.049 [http-nio-8888-exec-86] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:07.103 [http-nio-8888-exec-97] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:15.237 [http-nio-8888-exec-115] WARN  c.b.implatform.service.impl.GroupMemberServiceImpl - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25e0b0f9] Transaction not enabled
+2026-10-09 18:36:15.279 [http-nio-8888-exec-115] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 邀请进入群聊，群聊id:1102,群聊名称:千人群2,被邀请用户id:[3]
+2026-10-09 18:36:15.449 [http-nio-8888-exec-100] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:15.488 [http-nio-8888-exec-101] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:15.539 [http-nio-8888-exec-106] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:36:48.235 [scheduled-task-4] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:37:27.103 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:16,终端：0
+2026-10-09 18:37:27.146 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:27,终端：0
+2026-10-09 18:37:27.300 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:3,终端：0
+2026-10-09 18:37:27.370 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:6,终端：0
+2026-10-09 18:37:27.406 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:28,终端：0
+2026-10-09 18:37:27.421 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:13,终端：0
+2026-10-09 18:37:27.434 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:9,终端：0
+2026-10-09 18:37:27.448 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:34,终端：0
+2026-10-09 18:37:27.463 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:42,终端：0
+2026-10-09 18:37:27.479 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:46,终端：0
+2026-10-09 18:37:27.488 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:45,终端：0
+2026-10-09 18:37:27.498 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:23,终端：0
+2026-10-09 18:37:27.509 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:24,终端：0
+2026-10-09 18:37:27.639 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:31,终端：0
+2026-10-09 18:37:27.649 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:4,终端：0
+2026-10-09 18:37:27.657 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:25,终端：0
+2026-10-09 18:37:27.668 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:26,终端：0
+2026-10-09 18:37:27.682 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:1,终端：0
+2026-10-09 18:37:27.691 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:38,终端：0
+2026-10-09 18:37:27.701 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:7,终端：0
+2026-10-09 18:37:27.711 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:32,终端：0
+2026-10-09 18:37:27.722 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:14,终端：0
+2026-10-09 18:37:27.738 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:52,终端：0
+2026-10-09 18:37:27.748 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:43,终端：0
+2026-10-09 18:37:27.757 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:55,终端：0
+2026-10-09 18:37:27.768 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:58,终端：0
+2026-10-09 18:37:27.776 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:11,终端：0
+2026-10-09 18:37:27.784 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:59,终端：0
+2026-10-09 18:37:27.793 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:48,终端：0
+2026-10-09 18:37:27.801 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:12,终端：0
+2026-10-09 18:37:27.812 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:49,终端：0
+2026-10-09 18:37:27.819 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:37,终端：0
+2026-10-09 18:37:27.827 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:44,终端：0
+2026-10-09 18:37:27.835 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:39,终端：0
+2026-10-09 18:37:27.843 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:20,终端：0
+2026-10-09 18:37:27.851 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:50,终端：0
+2026-10-09 18:37:27.860 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:56,终端：0
+2026-10-09 18:37:27.867 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:5,终端：0
+2026-10-09 18:37:27.876 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:29,终端：0
+2026-10-09 18:37:27.884 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:70,终端：0
+2026-10-09 18:37:27.894 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:61,终端：0
+2026-10-09 18:37:27.903 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:17,终端：0
+2026-10-09 18:37:27.912 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:40,终端：0
+2026-10-09 18:37:27.920 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:54,终端：0
+2026-10-09 18:37:27.928 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:19,终端：0
+2026-10-09 18:37:27.938 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:10,终端：0
+2026-10-09 18:37:27.946 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:21,终端：0
+2026-10-09 18:37:27.956 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:15,终端：0
+2026-10-09 18:37:27.966 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:62,终端：0
+2026-10-09 18:37:27.975 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:72,终端：0
+2026-10-09 18:37:27.992 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:68,终端：0
+2026-10-09 18:37:27.999 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:22,终端：0
+2026-10-09 18:37:28.007 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:71,终端：0
+2026-10-09 18:37:28.014 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:35,终端：0
+2026-10-09 18:37:28.021 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:77,终端：0
+2026-10-09 18:37:28.029 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:66,终端：0
+2026-10-09 18:37:28.036 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:47,终端：0
+2026-10-09 18:37:28.043 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:41,终端：0
+2026-10-09 18:37:28.050 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:80,终端：0
+2026-10-09 18:37:28.058 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:73,终端：0
+2026-10-09 18:37:28.065 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:8,终端：0
+2026-10-09 18:37:28.072 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:64,终端：0
+2026-10-09 18:37:28.079 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:94,终端：0
+2026-10-09 18:37:28.087 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:90,终端：0
+2026-10-09 18:37:28.094 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:88,终端：0
+2026-10-09 18:37:28.102 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:36,终端：0
+2026-10-09 18:37:28.109 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:92,终端：0
+2026-10-09 18:37:28.116 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:79,终端：0
+2026-10-09 18:37:28.123 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:2,终端：0
+2026-10-09 18:37:28.131 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:75,终端：0
+2026-10-09 18:37:28.138 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:51,终端：0
+2026-10-09 18:37:28.146 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:53,终端：0
+2026-10-09 18:37:28.152 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:30,终端：0
+2026-10-09 18:37:28.160 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:57,终端：0
+2026-10-09 18:37:28.168 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:89,终端：0
+2026-10-09 18:37:28.176 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:69,终端：0
+2026-10-09 18:37:28.184 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:98,终端：0
+2026-10-09 18:37:28.193 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:76,终端：0
+2026-10-09 18:37:28.200 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:85,终端：0
+2026-10-09 18:37:28.207 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:95,终端：0
+2026-10-09 18:37:28.214 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:84,终端：0
+2026-10-09 18:37:28.222 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:82,终端：0
+2026-10-09 18:37:28.230 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:83,终端：0
+2026-10-09 18:37:28.237 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:78,终端：0
+2026-10-09 18:37:28.244 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:60,终端：0
+2026-10-09 18:37:28.252 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:63,终端：0
+2026-10-09 18:37:28.261 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:74,终端：0
+2026-10-09 18:37:28.289 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:96,终端：0
+2026-10-09 18:37:28.314 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:93,终端：0
+2026-10-09 18:37:28.321 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:65,终端：0
+2026-10-09 18:37:28.329 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:81,终端：0
+2026-10-09 18:37:28.335 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:18,终端：0
+2026-10-09 18:37:28.343 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:67,终端：0
+2026-10-09 18:37:28.351 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:33,终端：0
+2026-10-09 18:37:28.359 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:100,终端：0
+2026-10-09 18:37:28.368 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:86,终端：0
+2026-10-09 18:37:28.375 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:99,终端：0
+2026-10-09 18:37:28.383 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:87,终端：0
+2026-10-09 18:37:28.390 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:91,终端：0
+2026-10-09 18:37:28.400 [pool-2-thread-23] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:97,终端：0
+2026-10-09 18:37:28.933 [http-nio-8888-exec-89] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:37:28.983 [http-nio-8888-exec-122] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:37:29.022 [http-nio-8888-exec-124] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:37:29.061 [http-nio-8888-exec-128] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:37:29.105 [http-nio-8888-exec-90] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:37:29.142 [http-nio-8888-exec-99] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:37:29.178 [http-nio-8888-exec-119] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:37:29.215 [http-nio-8888-exec-95] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:37:29.251 [http-nio-8888-exec-100] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:37:29.286 [http-nio-8888-exec-129] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:37:29.321 [http-nio-8888-exec-115] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:37:29.371 [http-nio-8888-exec-133] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:37:48.234 [scheduled-task-6] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:38:31.962 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:4,终端：0
+2026-10-09 18:38:32.082 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:17,终端：0
+2026-10-09 18:38:32.102 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:6,终端：0
+2026-10-09 18:38:32.112 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:9,终端：0
+2026-10-09 18:38:32.123 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:5,终端：0
+2026-10-09 18:38:32.133 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:19,终端：0
+2026-10-09 18:38:32.145 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:3,终端：0
+2026-10-09 18:38:32.156 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:21,终端：0
+2026-10-09 18:38:32.166 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:14,终端：0
+2026-10-09 18:38:32.175 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:35,终端：0
+2026-10-09 18:38:32.183 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:15,终端：0
+2026-10-09 18:38:32.191 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:10,终端：0
+2026-10-09 18:38:32.198 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:26,终端：0
+2026-10-09 18:38:32.207 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:16,终端：0
+2026-10-09 18:38:32.217 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:1,终端：0
+2026-10-09 18:38:32.226 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:2,终端：0
+2026-10-09 18:38:32.236 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:20,终端：0
+2026-10-09 18:38:32.243 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:18,终端：0
+2026-10-09 18:38:32.253 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:12,终端：0
+2026-10-09 18:38:32.261 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:25,终端：0
+2026-10-09 18:38:32.271 [pool-2-thread-3] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:34,终端：0
+2026-10-09 18:38:32.402 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:33,终端：0
+2026-10-09 18:38:32.411 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:43,终端：0
+2026-10-09 18:38:32.422 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:50,终端：0
+2026-10-09 18:38:32.432 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:31,终端：0
+2026-10-09 18:38:32.442 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:49,终端：0
+2026-10-09 18:38:32.451 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:46,终端：0
+2026-10-09 18:38:32.461 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:52,终端：0
+2026-10-09 18:38:32.472 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:40,终端：0
+2026-10-09 18:38:32.480 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:13,终端：0
+2026-10-09 18:38:32.489 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:7,终端：0
+2026-10-09 18:38:32.498 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:38,终端：0
+2026-10-09 18:38:32.513 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:57,终端：0
+2026-10-09 18:38:32.523 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:55,终端：0
+2026-10-09 18:38:32.532 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:39,终端：0
+2026-10-09 18:38:32.547 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:24,终端：0
+2026-10-09 18:38:32.556 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:44,终端：0
+2026-10-09 18:38:32.569 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:56,终端：0
+2026-10-09 18:38:32.578 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:27,终端：0
+2026-10-09 18:38:32.588 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:36,终端：0
+2026-10-09 18:38:32.596 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:51,终端：0
+2026-10-09 18:38:32.604 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:28,终端：0
+2026-10-09 18:38:32.613 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:54,终端：0
+2026-10-09 18:38:32.624 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:58,终端：0
+2026-10-09 18:38:32.632 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:42,终端：0
+2026-10-09 18:38:32.640 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:32,终端：0
+2026-10-09 18:38:32.649 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:45,终端：0
+2026-10-09 18:38:32.658 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:70,终端：0
+2026-10-09 18:38:32.670 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:48,终端：0
+2026-10-09 18:38:32.679 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:11,终端：0
+2026-10-09 18:38:32.688 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:72,终端：0
+2026-10-09 18:38:32.697 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:53,终端：0
+2026-10-09 18:38:32.707 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:61,终端：0
+2026-10-09 18:38:32.716 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:67,终端：0
+2026-10-09 18:38:32.724 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:47,终端：0
+2026-10-09 18:38:32.733 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:41,终端：0
+2026-10-09 18:38:32.744 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:66,终端：0
+2026-10-09 18:38:32.751 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:71,终端：0
+2026-10-09 18:38:32.764 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:73,终端：0
+2026-10-09 18:38:32.778 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:77,终端：0
+2026-10-09 18:38:32.786 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:62,终端：0
+2026-10-09 18:38:32.793 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:59,终端：0
+2026-10-09 18:38:32.811 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:69,终端：0
+2026-10-09 18:38:32.819 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:80,终端：0
+2026-10-09 18:38:32.827 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:68,终端：0
+2026-10-09 18:38:32.833 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:23,终端：0
+2026-10-09 18:38:32.841 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:60,终端：0
+2026-10-09 18:38:32.849 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:81,终端：0
+2026-10-09 18:38:32.856 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:37,终端：0
+2026-10-09 18:38:32.863 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:85,终端：0
+2026-10-09 18:38:32.871 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:76,终端：0
+2026-10-09 18:38:32.878 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:30,终端：0
+2026-10-09 18:38:32.886 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:90,终端：0
+2026-10-09 18:38:32.893 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:89,终端：0
+2026-10-09 18:38:32.900 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:84,终端：0
+2026-10-09 18:38:32.907 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:75,终端：0
+2026-10-09 18:38:32.915 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:83,终端：0
+2026-10-09 18:38:32.923 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:88,终端：0
+2026-10-09 18:38:32.931 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:78,终端：0
+2026-10-09 18:38:32.938 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:74,终端：0
+2026-10-09 18:38:32.946 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:93,终端：0
+2026-10-09 18:38:32.953 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:29,终端：0
+2026-10-09 18:38:32.959 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:64,终端：0
+2026-10-09 18:38:32.967 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:94,终端：0
+2026-10-09 18:38:32.976 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:100,终端：0
+2026-10-09 18:38:32.983 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:86,终端：0
+2026-10-09 18:38:32.991 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:22,终端：0
+2026-10-09 18:38:32.998 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:65,终端：0
+2026-10-09 18:38:33.005 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:8,终端：0
+2026-10-09 18:38:33.013 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:92,终端：0
+2026-10-09 18:38:33.020 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:79,终端：0
+2026-10-09 18:38:33.027 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:82,终端：0
+2026-10-09 18:38:33.034 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:97,终端：0
+2026-10-09 18:38:33.042 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:98,终端：0
+2026-10-09 18:38:33.049 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:95,终端：0
+2026-10-09 18:38:33.056 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:96,终端：0
+2026-10-09 18:38:33.063 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:87,终端：0
+2026-10-09 18:38:33.071 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:99,终端：0
+2026-10-09 18:38:33.078 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:91,终端：0
+2026-10-09 18:38:33.086 [pool-2-thread-7] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:63,终端：0
+2026-10-09 18:38:33.610 [http-nio-8888-exec-168] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:33.656 [http-nio-8888-exec-89] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:33.689 [http-nio-8888-exec-163] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:33.724 [http-nio-8888-exec-141] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:33.758 [http-nio-8888-exec-140] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:38:33.788 [http-nio-8888-exec-122] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:38:33.818 [http-nio-8888-exec-90] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:38:33.848 [http-nio-8888-exec-160] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:3,群聊id:1102
+2026-10-09 18:38:33.877 [http-nio-8888-exec-174] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:38:33.908 [http-nio-8888-exec-169] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:38:33.937 [http-nio-8888-exec-164] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:38:33.967 [http-nio-8888-exec-170] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:4,群聊id:1102
+2026-10-09 18:38:45.175 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:8,终端：0
+2026-10-09 18:38:45.318 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:2,终端：0
+2026-10-09 18:38:45.334 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:4,终端：0
+2026-10-09 18:38:45.343 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:3,终端：0
+2026-10-09 18:38:45.355 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:6,终端：0
+2026-10-09 18:38:45.371 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:1,终端：0
+2026-10-09 18:38:45.383 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:26,终端：0
+2026-10-09 18:38:45.397 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:24,终端：0
+2026-10-09 18:38:45.409 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:13,终端：0
+2026-10-09 18:38:45.423 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:37,终端：0
+2026-10-09 18:38:45.437 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:29,终端：0
+2026-10-09 18:38:45.450 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:23,终端：0
+2026-10-09 18:38:45.462 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:7,终端：0
+2026-10-09 18:38:45.473 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:20,终端：0
+2026-10-09 18:38:45.486 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:44,终端：0
+2026-10-09 18:38:45.494 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:38,终端：0
+2026-10-09 18:38:45.503 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:35,终端：0
+2026-10-09 18:38:45.512 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:32,终端：0
+2026-10-09 18:38:45.532 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:30,终端：0
+2026-10-09 18:38:45.541 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:14,终端：0
+2026-10-09 18:38:45.550 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:41,终端：0
+2026-10-09 18:38:45.559 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:36,终端：0
+2026-10-09 18:38:45.569 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:48,终端：0
+2026-10-09 18:38:45.578 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:21,终端：0
+2026-10-09 18:38:45.589 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:9,终端：0
+2026-10-09 18:38:45.597 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:31,终端：0
+2026-10-09 18:38:45.605 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:5,终端：0
+2026-10-09 18:38:45.616 [pool-2-thread-4] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:18,终端：0
+2026-10-09 18:38:45.756 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:25,终端：0
+2026-10-09 18:38:45.765 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:42,终端：0
+2026-10-09 18:38:45.773 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:15,终端：0
+2026-10-09 18:38:45.782 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:53,终端：0
+2026-10-09 18:38:45.791 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:47,终端：0
+2026-10-09 18:38:45.800 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:10,终端：0
+2026-10-09 18:38:45.809 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:49,终端：0
+2026-10-09 18:38:45.819 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:59,终端：0
+2026-10-09 18:38:45.827 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:50,终端：0
+2026-10-09 18:38:45.836 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:63,终端：0
+2026-10-09 18:38:45.856 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:55,终端：0
+2026-10-09 18:38:45.863 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:61,终端：0
+2026-10-09 18:38:45.873 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:43,终端：0
+2026-10-09 18:38:45.885 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:39,终端：0
+2026-10-09 18:38:45.893 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:68,终端：0
+2026-10-09 18:38:45.900 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:12,终端：0
+2026-10-09 18:38:45.907 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:17,终端：0
+2026-10-09 18:38:45.915 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:69,终端：0
+2026-10-09 18:38:45.922 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:67,终端：0
+2026-10-09 18:38:45.929 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:11,终端：0
+2026-10-09 18:38:45.936 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:56,终端：0
+2026-10-09 18:38:45.943 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:64,终端：0
+2026-10-09 18:38:45.950 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:62,终端：0
+2026-10-09 18:38:45.958 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:19,终端：0
+2026-10-09 18:38:45.966 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:54,终端：0
+2026-10-09 18:38:45.974 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:60,终端：0
+2026-10-09 18:38:45.982 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:83,终端：0
+2026-10-09 18:38:45.990 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:70,终端：0
+2026-10-09 18:38:45.998 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:75,终端：0
+2026-10-09 18:38:46.011 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:52,终端：0
+2026-10-09 18:38:46.018 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:79,终端：0
+2026-10-09 18:38:46.027 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:71,终端：0
+2026-10-09 18:38:46.035 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:86,终端：0
+2026-10-09 18:38:46.044 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:34,终端：0
+2026-10-09 18:38:46.051 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:81,终端：0
+2026-10-09 18:38:46.058 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:74,终端：0
+2026-10-09 18:38:46.066 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:76,终端：0
+2026-10-09 18:38:46.073 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:82,终端：0
+2026-10-09 18:38:46.080 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:73,终端：0
+2026-10-09 18:38:46.087 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:85,终端：0
+2026-10-09 18:38:46.094 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:40,终端：0
+2026-10-09 18:38:46.101 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:78,终端：0
+2026-10-09 18:38:46.108 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:65,终端：0
+2026-10-09 18:38:46.115 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:46,终端：0
+2026-10-09 18:38:46.122 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:77,终端：0
+2026-10-09 18:38:46.129 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:84,终端：0
+2026-10-09 18:38:46.136 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:58,终端：0
+2026-10-09 18:38:46.144 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:66,终端：0
+2026-10-09 18:38:46.151 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:72,终端：0
+2026-10-09 18:38:46.158 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:88,终端：0
+2026-10-09 18:38:46.165 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:16,终端：0
+2026-10-09 18:38:46.172 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:45,终端：0
+2026-10-09 18:38:46.179 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:80,终端：0
+2026-10-09 18:38:46.186 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:22,终端：0
+2026-10-09 18:38:46.193 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:89,终端：0
+2026-10-09 18:38:46.200 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:27,终端：0
+2026-10-09 18:38:46.206 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:28,终端：0
+2026-10-09 18:38:46.213 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:51,终端：0
+2026-10-09 18:38:46.220 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:87,终端：0
+2026-10-09 18:38:46.227 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:33,终端：0
+2026-10-09 18:38:46.234 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:92,终端：0
+2026-10-09 18:38:46.241 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:96,终端：0
+2026-10-09 18:38:46.248 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:57,终端：0
+2026-10-09 18:38:46.255 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:90,终端：0
+2026-10-09 18:38:46.262 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:93,终端：0
+2026-10-09 18:38:46.269 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:100,终端：0
+2026-10-09 18:38:46.276 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:94,终端：0
+2026-10-09 18:38:46.283 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:98,终端：0
+2026-10-09 18:38:46.291 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:99,终端：0
+2026-10-09 18:38:46.298 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:97,终端：0
+2026-10-09 18:38:46.306 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:95,终端：0
+2026-10-09 18:38:46.313 [pool-2-thread-10] INFO  com.bx.implatform.listener.UserEventListener - 用户上线,id:91,终端：0
+2026-10-09 18:38:46.945 [http-nio-8888-exec-150] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:46.976 [http-nio-8888-exec-162] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:47.006 [http-nio-8888-exec-159] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:47.123 [http-nio-8888-exec-144] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 退出群聊，群聊id:1102,群聊名称:千人群2,用户id:3
+2026-10-09 18:38:47.253 [http-nio-8888-exec-143] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:47.284 [http-nio-8888-exec-95] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:47.313 [http-nio-8888-exec-11] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:48.225 [scheduled-task-8] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:38:55.413 [http-nio-8888-exec-148] WARN  c.b.implatform.service.impl.GroupMemberServiceImpl - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6df9a377] Transaction not enabled
+2026-10-09 18:38:55.438 [http-nio-8888-exec-148] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 邀请进入群聊，群聊id:1102,群聊名称:千人群2,被邀请用户id:[3]
+2026-10-09 18:38:55.563 [http-nio-8888-exec-153] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:55.599 [http-nio-8888-exec-131] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:38:55.630 [http-nio-8888-exec-149] INFO  c.b.i.service.impl.GroupMessageServiceImpl - 发送群聊消息,发送id:2,群聊id:1102
+2026-10-09 18:39:48.219 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:40:48.232 [scheduled-task-4] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:41:48.231 [scheduled-task-4] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:41:49.333 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:41:49.361 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:41:49.392 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:41:49.554 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:41:49.639 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:41:49.677 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:42:25.679 [kafka-producer-network-thread | im-platform-producer-1] INFO  org.apache.kafka.clients.NetworkClient - [Producer clientId=im-platform-producer-1] Node -1 disconnected.
+2026-10-09 18:42:48.223 [scheduled-task-6] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:43:48.218 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:44:48.223 [scheduled-task-8] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:45:48.216 [scheduled-task-8] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:46:48.221 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:47:48.226 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:48:48.220 [scheduled-task-2] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:49:48.223 [scheduled-task-3] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:50:48.213 [scheduled-task-3] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:51:48.207 [scheduled-task-7] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:51:49.375 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:51:49.375 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-09 18:52:03.082 [kafka-producer-network-thread | im-platform-producer-1] INFO  org.apache.kafka.clients.NetworkClient - [Producer clientId=im-platform-producer-1] Node -1 disconnected.
+2026-10-09 18:52:48.219 [scheduled-task-4] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:53:48.210 [scheduled-task-5] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:54:48.205 [scheduled-task-7] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:55:48.207 [scheduled-task-9] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:56:48.206 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:57:48.202 [scheduled-task-3] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:58:48.209 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 18:59:48.211 [scheduled-task-3] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:00:48.199 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:01:48.201 [scheduled-task-4] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:02:48.203 [scheduled-task-8] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:03:48.200 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:04:48.204 [scheduled-task-2] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:05:48.193 [scheduled-task-9] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:06:48.192 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:07:48.199 [scheduled-task-9] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-09 19:08:48.201 [scheduled-task-10] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...

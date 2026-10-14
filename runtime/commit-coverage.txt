@@ -1,0 +1,27 @@
+﻿perf(verify): 群聊核对判据从「帧数」改为「覆盖水位」
+
+背景：群消息信号合流（box-im 侧 74c456b2）后，帧数天然远小于
+「消息数 x 在线人数」。旧的核对方式拿 totalWs = total*(online-1) 当期望值，
+合流后永远达不到，每轮都耗满 30s 超时，recvMs 被凭空撑大 —— 实测报出 90.81%
+的假偏差，recvMs 从 17.9s 变成 34.7s，AB 对比完全失真。
+
+正确的正确性判据是「覆盖」而不是「帧数」：
+读扩散群推的是 IMGroupSignal{groupId,maxMessageId,senderId}，客户端按
+maxMessageId 游标拉时间线。只要客户端的水位追平了服务端写到的位置，
+中间被合流掉多少条信号都不缺消息。
+
+改动：
+- SimulatedUserSession: 记录每个群收到过的最大 maxMessageId（覆盖水位）
+- SimulatedSessionRegistry.getGroupCoverageFloor(): 取所有在线会话中的最小值。
+  取最小而非平均 —— 只要有一个在线用户没追上，这次推送对他就是漏的
+- SimulatorGroupMsgServiceImpl: 从发送响应 GroupMessageVO.id 记录每个群写到的
+  最大 id 作为基准；收尾判据改为「所有目标群的最差水位都追平」
+- 兜底：拿不到消息 id 或一个会话都没记到水位时，退回帧数判据。
+  没有兜底会让每轮都耗满 30s 超时，而那个 30s 会被误读成「投递变慢了」
+- 新增 status 字段 coveragePct / groupsCovered / groupsTotal / coverageDetail
+
+已验证：新字段在真实运行中生效，返回 coveragePct=0%, 1/1 群, 原因 coverage-partial
+
+！未解决：收到 89,176 帧（说明 cmd=6 分支确实在走）但水位仍为 0，
+覆盖率恒为 0%。已加 coverageDetail（groupId -> 最差水位/服务端位置）用于定位，
+验证轮次因执行环境 120s 截止多次中断，尚未取得结论。

@@ -1,0 +1,912 @@
+14:09:41,044 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+14:09:41,050 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Here is a list of configurators discovered as a service, by rank: 
+14:09:41,051 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:09:41,051 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+14:09:41,051 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:09:41,057 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:09:41,057 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:09:41,058 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:09:41,120 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+14:09:41,127 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+14:09:41,127 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 69 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:09:41,127 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:09:41,133 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:09:41,137 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:09:41,139 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/classes/!/logback.xml]
+14:09:41,169 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2c767a52 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+14:09:41,403 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@619713e5 - Adding [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+14:09:41,403 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2c767a52 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+14:09:41,414 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+14:09:41,414 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:09:41,414 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+14:09:41,414 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:09:41,414 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:09:41,443 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+14:09:41,444 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+14:09:41,444 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+14:09:41,453 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+14:09:41,454 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [CONSOLE] not referenced. Skipping further processing.
+14:09:41,454 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+14:09:41,454 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@708f5957 - End of configuration.
+14:09:41,457 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@68999068 - Registering current configuration as safe fallback point
+14:09:41,458 |-INFO in ch.qos.logback.classic.util.ContextInitializer@130161f7 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 325 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+14:09:42,651 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@40e10ff8 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+14:09:42,666 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@619713e5 - Adding [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+14:09:42,666 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@40e10ff8 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-platform/target/im-platform.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+14:09:42,671 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+14:09:42,671 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:09:42,671 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+14:09:42,671 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:09:42,671 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:09:42,683 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+14:09:42,683 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+14:09:42,686 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+14:09:42,686 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+14:09:42,686 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+14:09:42,686 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+14:09:42,686 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+14:09:42,686 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+14:09:42,687 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+14:09:42,687 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+14:09:42,687 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+14:09:42,687 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+14:09:42,687 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+14:09:42,687 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+14:09:42,687 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+14:09:42,687 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+14:09:42,687 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+14:09:42,687 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:09:42,704 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:09:42,734 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+14:09:42,734 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+14:09:42,734 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@557a1e2d - Propagating INFO level on Logger[ROOT] onto the JUL framework
+14:09:42,735 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+14:09:42,736 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@26a4842b - End of configuration.
+14:09:42,736 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@7e38a7fe - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2026-10-08 14:09:42.953 [main] INFO  com.bx.implatform.IMPlatformApp - Starting IMPlatformApp v4.0.0 using Java 17.0.12 with PID 11576 (D:\Software\SourceCode\IM\box-im\im-platform\target\im-platform.jar started by Desktop009 in D:\Software\SourceCode\IM\box-im\im-platform)
+2026-10-08 14:09:42.958 [main] INFO  com.bx.implatform.IMPlatformApp - The following 1 profile is active: "dev"
+2026-10-08 14:09:46.381 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-08 14:09:46.391 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-08 14:09:46.483 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+2026-10-08 14:09:48.358 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.redis.redisson-org.redisson.spring.starter.RedissonProperties' of type [org.redisson.spring.starter.RedissonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-08 14:09:48.366 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.data.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-08 14:09:48.371 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.redisson.spring.starter.RedissonAutoConfiguration' of type [org.redisson.spring.starter.RedissonAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-08 14:09:48.593 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2026-10-08 14:09:49.146 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6380
+2026-10-08 14:09:49.265 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6380
+2026-10-08 14:09:49.306 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisson' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-08 14:09:49.340 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonConnectionFactory' of type [org.redisson.spring.data.connection.RedissonConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-08 14:09:49.343 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.bx.implatform.config.RedisConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [healthEndpointGroupsBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-10-08 14:09:49.788 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2026-10-08 14:09:49.809 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-08 14:09:49.810 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2026-10-08 14:09:49.862 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-08 14:09:49.863 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6786 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-10-08 14:09:51.185 [main] ERROR com.bx.implatform.thirdparty.MinioService - 查询bucket失败
+java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-10-08 14:09:51.197 [main] ERROR com.bx.implatform.thirdparty.MinioService - 创建bucket失败,
+java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-10-08 14:09:51.200 [main] ERROR com.bx.implatform.thirdparty.MinioService - 创建bucket失败,
+java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-10-08 14:09:51.651 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-08 14:09:51.892 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c3e5e3c
+2026-10-08 14:09:51.896 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-08 14:09:53.978 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-10-08 14:09:54.110 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2026-10-08 14:09:54.154 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-08 14:09:54.220 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-08 14:09:54.398 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-08 14:09:54.399 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-08 14:09:54.399 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791439794396
+2026-10-08 14:09:54.415 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-08 14:09:54.425 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-08 14:09:54.426 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-08 14:09:54.438 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-08 14:09:54.438 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-08 14:09:54.439 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791439794438
+2026-10-08 14:09:54.445 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-08 14:09:54.446 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-08 14:09:54.447 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-08 14:09:54.456 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-08 14:09:54.457 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-08 14:09:54.457 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791439794456
+2026-10-08 14:09:54.462 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-08 14:09:54.464 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-08 14:09:54.465 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-08 14:09:54.475 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-08 14:09:54.475 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-08 14:09:54.475 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791439794475
+2026-10-08 14:09:54.481 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-08 14:09:54.483 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-08 14:09:54.484 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-08 14:09:54.493 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-08 14:09:54.493 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-08 14:09:54.493 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791439794492
+2026-10-08 14:09:54.499 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-08 14:09:54.501 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-im-platform-group-fanout-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = im-platform-group-fanout
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-10-08 14:09:54.501 [main] INFO  o.a.k.c.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-10-08 14:09:54.510 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.0
+2026-10-08 14:09:54.511 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2ae524ed625438c5
+2026-10-08 14:09:54.511 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1791439794510
+2026-10-08 14:09:54.516 [main] INFO  o.a.k.c.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Subscribed to topic(s): im-group-fanout
+2026-10-08 14:09:54.546 [main] INFO  com.bx.implatform.IMPlatformApp - Started IMPlatformApp in 12.789 seconds (process running for 13.89)
+2026-10-08 14:09:54.570 [scheduled-task-2] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:09:54.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-08 14:09:54.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-08 14:09:54.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-08 14:09:54.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-08 14:09:54.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-08 14:09:54.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-08 14:09:54.980 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-08 14:09:54.980 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-08 14:09:54.980 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-08 14:09:54.980 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-08 14:09:54.980 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-08 14:09:54.981 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2026-10-08 14:09:54.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:54.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:54.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:54.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:54.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:54.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-5-ef5d1225-747e-4d9d-91a3-2310a9e4992c
+2026-10-08 14:09:55.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-4-867141ca-c554-4bdc-b35d-f9a7f40b7f91
+2026-10-08 14:09:55.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-3-a3a616bc-7de3-45a9-a9e4-9aac10f1b601
+2026-10-08 14:09:55.013 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-1-81b397d1-2f7f-4288-aa41-994215531f8d
+2026-10-08 14:09:55.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-6-7dff7e3b-ba63-45d3-a8fe-de5316ec690c
+2026-10-08 14:09:55.013 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Request joining group due to: need to re-join with the given member-id: consumer-im-platform-group-fanout-2-00473b4b-d4b5-4cb1-813a-5534db3432cb
+2026-10-08 14:09:55.013 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.014 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.013 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.014 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] (Re-)joining group
+2026-10-08 14:09:55.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-2-00473b4b-d4b5-4cb1-813a-5534db3432cb', protocol='range'}
+2026-10-08 14:09:55.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-3-a3a616bc-7de3-45a9-a9e4-9aac10f1b601', protocol='range'}
+2026-10-08 14:09:55.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-4-867141ca-c554-4bdc-b35d-f9a7f40b7f91', protocol='range'}
+2026-10-08 14:09:55.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-5-ef5d1225-747e-4d9d-91a3-2310a9e4992c', protocol='range'}
+2026-10-08 14:09:55.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-1-81b397d1-2f7f-4288-aa41-994215531f8d', protocol='range'}
+2026-10-08 14:09:55.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Successfully joined group with generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-6-7dff7e3b-ba63-45d3-a8fe-de5316ec690c', protocol='range'}
+2026-10-08 14:09:55.032 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Finished assignment for group at generation 8: {consumer-im-platform-group-fanout-4-867141ca-c554-4bdc-b35d-f9a7f40b7f91=Assignment(partitions=[im-group-fanout-3]), consumer-im-platform-group-fanout-2-00473b4b-d4b5-4cb1-813a-5534db3432cb=Assignment(partitions=[im-group-fanout-1]), consumer-im-platform-group-fanout-1-81b397d1-2f7f-4288-aa41-994215531f8d=Assignment(partitions=[im-group-fanout-0]), consumer-im-platform-group-fanout-6-7dff7e3b-ba63-45d3-a8fe-de5316ec690c=Assignment(partitions=[im-group-fanout-5]), consumer-im-platform-group-fanout-5-ef5d1225-747e-4d9d-91a3-2310a9e4992c=Assignment(partitions=[im-group-fanout-4]), consumer-im-platform-group-fanout-3-a3a616bc-7de3-45a9-a9e4-9aac10f1b601=Assignment(partitions=[im-group-fanout-2])}
+2026-10-08 14:09:55.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-4-867141ca-c554-4bdc-b35d-f9a7f40b7f91', protocol='range'}
+2026-10-08 14:09:55.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-6-7dff7e3b-ba63-45d3-a8fe-de5316ec690c', protocol='range'}
+2026-10-08 14:09:55.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-3-a3a616bc-7de3-45a9-a9e4-9aac10f1b601', protocol='range'}
+2026-10-08 14:09:55.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-2-00473b4b-d4b5-4cb1-813a-5534db3432cb', protocol='range'}
+2026-10-08 14:09:55.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-1-81b397d1-2f7f-4288-aa41-994215531f8d', protocol='range'}
+2026-10-08 14:09:55.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Successfully synced group in generation Generation{generationId=8, memberId='consumer-im-platform-group-fanout-5-ef5d1225-747e-4d9d-91a3-2310a9e4992c', protocol='range'}
+2026-10-08 14:09:55.041 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-5])
+2026-10-08 14:09:55.041 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-3])
+2026-10-08 14:09:55.041 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-2])
+2026-10-08 14:09:55.041 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-1])
+2026-10-08 14:09:55.041 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-0])
+2026-10-08 14:09:55.042 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Notifying assignor about the new Assignment(partitions=[im-group-fanout-4])
+2026-10-08 14:09:55.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-0
+2026-10-08 14:09:55.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-5
+2026-10-08 14:09:55.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-1
+2026-10-08 14:09:55.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-2
+2026-10-08 14:09:55.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-4
+2026-10-08 14:09:55.046 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Adding newly assigned partitions: im-group-fanout-3
+2026-10-08 14:09:55.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-4 to the committed offset FetchPosition{offset=5547, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-08 14:09:55.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-0 to the committed offset FetchPosition{offset=5449, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-08 14:09:55.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-1 to the committed offset FetchPosition{offset=5516, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-08 14:09:55.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-3 to the committed offset FetchPosition{offset=5480, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-08 14:09:55.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-5 to the committed offset FetchPosition{offset=5491, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-08 14:09:55.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.a.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition im-group-fanout-2 to the committed offset FetchPosition{offset=5518, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2026-10-08 14:09:55.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-4]
+2026-10-08 14:09:55.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-1]
+2026-10-08 14:09:55.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-5]
+2026-10-08 14:09:55.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-3]
+2026-10-08 14:09:55.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-0]
+2026-10-08 14:09:55.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - im-platform-group-fanout: partitions assigned: [im-group-fanout-2]
+2026-10-08 14:10:54.550 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:11:06.154 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-08 14:11:06.154 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-08 14:11:06.156 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-08 14:11:07.046 [http-nio-8888-exec-2] INFO  com.bx.implatform.service.impl.GroupServiceImpl - 退出群聊，群聊id:1111,群聊名称:万人群1,用户id:2
+2026-10-08 14:11:54.552 [scheduled-task-3] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:12:54.552 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:13:54.552 [scheduled-task-2] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:14:54.543 [scheduled-task-5] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:15:54.545 [scheduled-task-1] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:16:54.541 [scheduled-task-3] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:17:54.547 [scheduled-task-7] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:18:54.552 [scheduled-task-7] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...
+2026-10-08 14:18:55.239 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-1, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-08 14:18:55.239 [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-2, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-08 14:18:55.266 [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-3, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-08 14:18:55.266 [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-5, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-08 14:18:55.281 [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-6, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-08 14:18:55.281 [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-im-platform-group-fanout-4, groupId=im-platform-group-fanout] Node -1 disconnected.
+2026-10-08 14:19:54.541 [scheduled-task-7] INFO  c.b.i.task.schedule.ReloadSensitiveWordTask - 【定时任务】重新装载敏感词...

@@ -1,0 +1,53 @@
+perf(netty): 编解码器复用共享 ObjectMapper（每帧 31.65us -> 1.86us）
+
+## 问题
+
+im-server 的 4 个编解码器在 encode()/decode() 内部各自 new ObjectMapper()：
+
+  ws/endecode/MessageProtocolEncoder.java:15
+  ws/endecode/MessageProtocolDecoder.java:15
+  tcp/endecode/MessageProtocolEncoder.java:15
+  tcp/endecode/MessageProtocolDecoder.java:26
+
+即每下发一帧就构造一个新 mapper，其内部 serializer/deserializer 缓存
+每次都要重新惰性初始化。万人群一轮投递 99,000 帧 = 99,000 次构造。
+
+## 微基准（JDK 17 + Jackson 2.17.1，8 字段群消息载荷，2 万次取均值）
+
+  单线程   new ObjectMapper() 31.65 us/帧  vs  复用 1.86 us/帧   17.0x
+  4 线程   new                23.63 us/帧  vs  复用 1.16 us/帧
+  外推 99,000 帧：new 3.13s  vs  复用 0.18s
+
+## 实测（万人群，固定 100 在线 / 50 发送者）
+
+  投递阶段（recvMs - sendMs）：
+    改前基线中位数  15,395 ms   （5 轮，离散度 2,245 ms）
+    改后            6,867 ms / 7,199 ms   （2 轮）
+
+  —— 降幅约 55%，远超基线离散度。
+  WS 核对 99,000 / 99,000，偏差 0.00%，无异常。
+
+  注意：改后两轮的 sendMs 反而更高（3,774 / 3,207 vs 基线 1,836），
+  说明机器状态更差却投递更快，效应方向可信。
+
+## 机制说明
+
+直接 CPU 收益只解释约 3 秒，实际收益约 8.4 秒。差额推测来自
+分配压力：每轮 99,000 个 ObjectMapper 对象使 GC 压力显著上升，
+而 GC 停顿是全 JVM 的。此推测尚未用 GC 日志坐实，见 Step 0 后续。
+
+## 改动
+
+新增 im-common/util/JsonUtil.java 持有全局单例 mapper；
+4 处调用点改为 JsonUtil.mapper()。ObjectMapper 的读写方法线程安全，
+复用还能共享其内部序列化器缓存。
+
+## 另：本轮 CPU 归因（改后，12 核机器，采样 207s）
+
+  im-platform  累计 65.1s  平均 0.59 核  峰值 5.17 核
+  im-server    累计 15.1s  平均 0.17 核  峰值 1.58 核
+  simulator    累计 17.0s  平均 0.44 核  峰值 1.81 核
+  Redis        累计 11.25s（单线程 io_threads_active=0）
+
+没有任何进程饱和 —— 剩余 6.9s 投递不是算力问题。
+反推每帧仍有约 70us 未被解释，指向调度/等待而非计算。

@@ -1,0 +1,91 @@
+14:09:41,066 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+14:09:41,071 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - Here is a list of configurators discovered as a service, by rank: 
+14:09:41,071 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:09:41,071 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+14:09:41,071 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:09:41,080 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:09:41,080 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:09:41,083 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:09:41,091 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+14:09:41,092 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+14:09:41,092 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 10 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:09:41,092 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:09:41,093 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:09:41,095 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:09:41,095 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/classes/!/logback.xml]
+14:09:41,116 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6ac13091 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+14:09:41,418 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@5e316c74 - Adding [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+14:09:41,418 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6ac13091 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+14:09:41,423 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+14:09:41,423 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:09:41,423 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+14:09:41,423 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:09:41,423 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:09:41,452 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+14:09:41,452 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+14:09:41,452 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+14:09:41,459 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+14:09:41,460 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+14:09:41,464 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [CONSOLE] not referenced. Skipping further processing.
+14:09:41,464 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+14:09:41,466 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@6d2a209c - End of configuration.
+14:09:41,472 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@75329a49 - Registering current configuration as safe fallback point
+14:09:41,472 |-INFO in ch.qos.logback.classic.util.ContextInitializer@48fa0f47 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 379 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+14:09:42,520 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6955cb39 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+14:09:42,535 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@5e316c74 - Adding [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+14:09:42,535 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6955cb39 - URL [jar:nested:/D:/Software/SourceCode/IM/box-im/im-server/target/im-server.jar/!BOOT-INF/lib/spring-boot-3.3.1.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+14:09:42,538 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+14:09:42,538 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:09:42,539 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+14:09:42,539 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:09:42,539 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:09:42,548 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+14:09:42,549 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+14:09:42,553 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+14:09:42,553 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+14:09:42,553 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+14:09:42,553 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+14:09:42,553 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+14:09:42,553 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+14:09:42,555 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+14:09:42,555 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+14:09:42,555 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+14:09:42,555 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+14:09:42,555 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+14:09:42,555 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+14:09:42,555 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+14:09:42,555 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+14:09:42,555 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+14:09:42,556 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:09:42,570 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:09:42,612 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+14:09:42,613 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+14:09:42,613 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@235a0c16 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+14:09:42,613 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+14:09:42,615 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2b5f4d54 - End of configuration.
+14:09:42,615 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@5f7b97da - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2026-10-08 14:09:42.748 [main] INFO  com.bx.imserver.IMServerApp - Starting IMServerApp v4.0.0 using Java 17.0.12 with PID 14160 (D:\Software\SourceCode\IM\box-im\im-server\target\im-server.jar started by Desktop009 in D:\Software\SourceCode\IM\box-im\im-server)
+2026-10-08 14:09:42.751 [main] INFO  com.bx.imserver.IMServerApp - The following 1 profile is active: "dev"
+2026-10-08 14:09:43.498 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-08 14:09:43.503 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-08 14:09:43.548 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2026-10-08 14:09:45.120 [main] INFO  com.bx.imserver.IMServerApp - Started IMServerApp in 3.439 seconds (process running for 4.443)
+2026-10-08 14:09:46.219 [main] INFO  com.bx.imserver.netty.ws.WebSocketServer - websocket server 初始化完成,端口：8878

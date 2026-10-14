@@ -1,0 +1,21 @@
+﻿{
+    "Scale":  "TEN_THOUSAND",
+    "Label":  "万人群",
+    "N":  10000,
+    "KeysPerMsg":  30000,
+    "Online":  1000,
+    "Senders":  50,
+    "Rounds":  20,
+    "Total":  1000,
+    "Succeeded":  1000,
+    "Failed":  0,
+    "SendMs":  4627,
+    "RecvMs":  34714,
+    "WallSec":  45.3,
+    "MsgPerSec":  216.1,
+    "KeyPerSec":  6483000,
+    "TotalWs":  999000,
+    "WsRecv":  91768,
+    "WsOk":  false,
+    "Status":  "COMPLETED"
+}

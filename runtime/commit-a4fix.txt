@@ -1,0 +1,20 @@
+﻿fix(group): 退群/被踢/入群同步群在线集 —— 修 A4 复现的漏推
+
+问题（IM/verify 的 A4 用例复现）：退群接口返回成功，但该用户仍然继续收到
+该群的推送。原因是群在线集 im:group:online:{groupId} 只在登录/下线时维护，
+而扇出的接收者名单就是这张集合 —— 退群的人一直留在集合里，直到他下线。
+被踢同理；反向地，在线时被邀请入群的人也要等到下次登录才会开始收到推送。
+
+改动：
+- GroupOnlineService.userQuitGroup(userId, groupId)：单人单群 SREM。
+  与 usersOffline 的区别：那个是「用户整体下线」（presence key 会删），
+  这个是「人还在线但不再属于这个群」（presence key 还在），不能复用。
+- GroupOnlineService.userJoinGroup(userId, groupId)：仅当 presence 存在时才 SADD。
+  离线的人刻意不加，等他下次登录由 usersOnline 统一补齐。
+- GroupServiceImpl.quitGroup / removeGroupMembers / invite 三处调用。
+
+验证（IM/verify，100 在线）：
+  退群前 baseline=499373
+  退群后 SISMEMBER=0，水位冻结在 499373（修复前会推进到 499375）
+  重新入群后 SISMEMBER=1，水位恢复到 499380
+  10 passed / 0 failed，exit code 0
